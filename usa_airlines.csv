@@ -1,0 +1,12 @@
+airline_name,iata_code,icao_code,country_name,fleet_size
+American Airlines,AA,AAL,United States,963
+Delta Air Lines,DL,DAL,United States,823
+United Airlines,UA,UAL,United States,715
+Federal Express,FX,FDX,United States,367
+UPS Airlines,5X,UPS,United States,237
+JetBlue,B6,JBU,United States,218
+Alaska Airlines,AS,ASA,United States,156
+Republic Airlines,RW,RPA,United States,139
+PSA Airlines,OH,JIA,United States,109
+"Trans States Airlines, LLC",AX,LOF,United States,65
+Virgin America,VX,VRD,United States,62
