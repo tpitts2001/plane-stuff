@@ -9,3 +9,5 @@ flight = opensky.history(
     return_flight=True
 )
 flight
+
+#TODO check email for ssh acsess
