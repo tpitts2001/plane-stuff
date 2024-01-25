@@ -8,7 +8,7 @@ def get_price_history(tickers):
     price_histories = {}
     for ticker in tickers:
         stock = yf.Ticker(ticker)
-        history = stock.history(period="max")
+        history = stock.history(repair=True, period="max")
         price_histories[ticker] = history
     return price_histories
 
