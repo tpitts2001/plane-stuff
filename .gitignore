@@ -1,7 +1,7 @@
-/crude oil data/
-/EarningsDates/
-/flight data/
-/price data/
-/SEC income data/
-/yfinance income data/
-/.idea/
+crude oil data
+EarningsDates
+flight data
+price data
+SEC income data
+yfinance income data
+venv
