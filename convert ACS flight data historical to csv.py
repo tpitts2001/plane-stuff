@@ -46,6 +46,6 @@ column_labels = [
 ]
 
 # Usage
-source_dir = 'flight data/RAW ASC/international'  # Replace with the path to your .asc files
-target_dir = 'flight data/CSV/international'  # Replace with the path where you want to save .csv files
+source_dir = 'flight_data/RAW ASC/international'  # Replace with the path to your .asc files
+target_dir = 'flight_data/CSV/international'  # Replace with the path where you want to save .csv files
 convert_asc_to_csv_with_labels(source_dir, target_dir, column_labels)

@@ -5,7 +5,7 @@ import os
 file_names = ["4M.csv", "JJ.csv", "UC.csv", "LA.csv", "4C.csv", "LU.csv", "PZ.csv", "LP.csv"]
 
 # Folder containing the CSV files
-folder_path = "flight data/CSV/seperated by companies"  # Update this to your folder path
+folder_path = "flight_data/CSV/seperated by companies"  # Update this to your folder path
 
 # List to hold each DataFrame
 data_frames = []
@@ -23,7 +23,7 @@ for file_name in file_names:
 combined_data = pd.concat(data_frames, ignore_index=True)
 
 # Specify the location to save the new combined CSV file
-output_path = "flight data/CSV/seperated by companies/LTMAY.csv"  # Update this to your desired path
+output_path = "flight_data/CSV/seperated by companies/LTMAY.csv"  # Update this to your desired path
 
 # Save the combined data to a new CSV file
 combined_data.to_csv(output_path, index=False)

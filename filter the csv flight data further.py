@@ -2,8 +2,8 @@ import pandas as pd
 import os
 
 # Define the path to the original CSV file and the folder for the new file
-input_csv_path = 'flight data/CSV/whole/domestic.csv'  # Update this with the actual path
-output_folder_path = 'flight data/CSV/whole/filtered to traded companies'   # Update this with the desired output folder path
+input_csv_path = 'flight_data/CSV/whole/domestic.csv'  # Update this with the actual path
+output_folder_path = 'flight_data/CSV/whole/filtered to traded companies'  # Update this with the desired output folder path
 output_csv_path = os.path.join(output_folder_path, 'domestic.csv')
 
 # Check if the output folder exists, if not, create it

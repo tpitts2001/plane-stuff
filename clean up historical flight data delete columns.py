@@ -32,6 +32,6 @@ def process_csv_files(source_folder, destination_folder):
             df.to_csv(os.path.join(destination_folder, filename), index=False)
 
 # Example usage
-source_folder = 'flight data/CSV/seperated by companies'  # Replace with your source folder path
-destination_folder = 'flight data/filtered for model/without'  # Replace with your destination folder path
+source_folder = 'flight_data/CSV/seperated by companies'  # Replace with your source folder path
+destination_folder = 'flight_data/filtered for model/without'  # Replace with your destination folder path
 process_csv_files(source_folder, destination_folder)

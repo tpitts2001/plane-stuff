@@ -12,7 +12,7 @@ def get_price_history(tickers):
         price_histories[ticker] = history
     return price_histories
 
-output_directory = 'price data'
+output_directory = 'price_data'
 
 tickers = varibles.all_tickers
 

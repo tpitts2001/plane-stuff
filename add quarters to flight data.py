@@ -34,6 +34,6 @@ def add_quarter_column_to_csv(input_folder_path, output_folder_path):
                 print(f"Error processing file {filename}: {e}")
 
 # Specify the input and output folder paths here
-input_folder_path = 'flight data/filtered for model/without'
-output_folder_path = 'flight data/filtered for model/with quarter identification'
+input_folder_path = 'flight_data/filtered for model/without'
+output_folder_path = 'flight_data/filtered for model/with quarter identification'
 add_quarter_column_to_csv(input_folder_path, output_folder_path)

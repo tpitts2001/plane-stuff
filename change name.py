@@ -22,5 +22,5 @@ def rename_files_in_directory(directory_path):
             print(f"Renamed '{filename}' to '{os.path.basename(new_filepath)}'")
 
 # Replace 'your_directory_path' with the path to your folder
-your_directory_path = 'flight data/RAW ASC/international'
+your_directory_path = 'flight_data/RAW ASC/international'
 rename_files_in_directory(your_directory_path)

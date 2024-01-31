@@ -24,8 +24,8 @@ def process_all_csv(input_folder, output_folder, keywords):
             filter_dates(os.path.join(input_folder, file), output_folder)
 
 # Usage
-input_folder = 'price data'
-output_folder = 'price data/filtered for model'
+input_folder = 'price_data'
+output_folder = 'price_data/filtered for model'
 keywords = ["DAL", "CPA", "VLRS", "LTMAY", "JBLU", "HA", "ALGT", "ALK", "ULCC",
             "MESA", "AFLYY", "SNCY", "LUV", "AZUL", "GOL", "UAL", "SAVE", "SKYW", "AAL"]
 process_all_csv(input_folder, output_folder, keywords)

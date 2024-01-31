@@ -1,8 +1,8 @@
 import requests
-import pandas as pd
 import csv
 import os
 import time
+from datetime import datetime, timedelta
 
 def fetch_earnings(symbol, api_key):
     url = "https://www.alphavantage.co/query"
@@ -18,14 +18,6 @@ def fetch_earnings(symbol, api_key):
     else:
         return None
 
-def read_tickers_from_csv(file_path):
-    try:
-        df = pd.read_csv(file_path)
-        return df['Ticker'].tolist()
-    except Exception as e:
-        print(f"Error reading CSV file: {e}")
-        return []
-
 def write_to_csv(data, directory, filename):
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -36,18 +28,28 @@ def write_to_csv(data, directory, filename):
         dict_writer.writeheader()
         dict_writer.writerows(data)
 
-# Replace with your actual API key and the path to your CSV file.
+def wait_until(target_time):
+    while datetime.now() < target_time:
+        time.sleep(1)
+
+# Replace with your actual API key.
 api_key = 'AIEJB7CL4FJ3WZFY'
-csv_file_path = 'tickers_cik.csv'
 
 # Specify the directory and filename where you want to save the CSV file.
 output_directory = 'earnings_data'  # Change this to your desired directory
 
-tickers = read_tickers_from_csv(csv_file_path)
-all_data = []
+# Set start time to 1:30 AM. Adjust the day if necessary.
+start_time = datetime.now().replace(hour=1, minute=30, second=0, microsecond=0)
+if datetime.now() > start_time:
+    start_time += timedelta(days=1)
+
+print(f"Script will start at {start_time}")
+wait_until(start_time)
+
+tickers = ["AAL", "SKYW", "AFLYY", "LTMAY"]
 
 for symbol in tickers:
-    print(f"Fetching earnings_data for {symbol}...")
+    print(f"Fetching earnings data for {symbol}...")
 
     earnings = fetch_earnings(symbol, api_key)
     if earnings and "quarterlyEarnings" in earnings:
@@ -57,7 +59,7 @@ for symbol in tickers:
             write_to_csv(earnings_data, output_directory, output_filename)
             print(f"Earnings data for {symbol} written to {output_filename}")
         else:
-            print(f"No earnings_data found for {symbol}")
+            print(f"No earnings data found for {symbol}")
     else:
         print(f"Error fetching Earnings for {symbol}")
 

@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Directory containing the CSV files
-directory = 'flight data/filtered for model/with quarter identification'
+directory = 'flight_data/filtered for model/with quarter identification'
 
 # Iterate through all files in the directory
 for filename in os.listdir(directory):
