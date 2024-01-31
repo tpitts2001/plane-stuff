@@ -41,13 +41,13 @@ api_key = 'AIEJB7CL4FJ3WZFY'
 csv_file_path = 'tickers_cik.csv'
 
 # Specify the directory and filename where you want to save the CSV file.
-output_directory = 'earnings data'  # Change this to your desired directory
+output_directory = 'earnings-data'  # Change this to your desired directory
 
 tickers = read_tickers_from_csv(csv_file_path)
 all_data = []
 
 for symbol in tickers:
-    print(f"Fetching earnings data for {symbol}...")
+    print(f"Fetching earnings-data for {symbol}...")
 
     earnings = fetch_earnings(symbol, api_key)
     if earnings and "quarterlyEarnings" in earnings:
@@ -57,7 +57,7 @@ for symbol in tickers:
             write_to_csv(earnings_data, output_directory, output_filename)
             print(f"Earnings data for {symbol} written to {output_filename}")
         else:
-            print(f"No earnings data found for {symbol}")
+            print(f"No earnings-data found for {symbol}")
     else:
         print(f"Error fetching Earnings for {symbol}")
 
