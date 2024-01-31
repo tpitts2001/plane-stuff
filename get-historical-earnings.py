@@ -62,4 +62,4 @@ for symbol in tickers:
         print(f"Error fetching Earnings for {symbol}")
 
     print("Waiting for 1 minute before the next request...")
-    time.sleep(60)  # Wait for 1 minute
+    time.sleep(600)  # Wait for 1 minute
