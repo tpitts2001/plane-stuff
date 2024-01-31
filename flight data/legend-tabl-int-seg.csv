@@ -1,0 +1,33 @@
+Field Number,Field Name,Field Length,Data Type,Description
+1,Date of Data: Year,4,NUMERIC,"Century & Year (e.g., 1999)"
+2,Date of Data: Month,2,NUMERIC,Month of the year (01-12)
+3,Origin Airport: Alpha Code,3,CHARACTER,Airport Code exists in the Airports support file
+4,Origin Airport: Unique Numeric Code,5,NUMERIC,Airports Support table
+5,Origin Airport: World Area Code,3,NUMERIC,WAC Support table data that is linked
+6,Origin Airport: City Name,35,CHARACTER,airport support table
+7,Destination Airport: Alpha Code,3,CHARACTER,"airport code, exists in airports support file"
+8,Destination Airport: Numeric Code,5,NUMERIC,airports support code
+9,Destination Airport: World Area Code,3,NUMERIC,wac support table data that is linked with airports
+10,Destination Airport: City Name,35,CHARACTER,airports support table
+11,Carrier: Alpha Code,3,CHARACTER,this code matches up with whats in cardecodes for the carrier
+12,Carrier: Entity Code,5,CHARACTER,Carriers report their T100 using their unique CarDecode Entity Code(s) A carrier can have more than one of these.
+13,Official OAI Group Code,1,NUMERIC,1 = Large Regional Carrier - $20 million to $100 million in revenue2 = National Carrier - $100 million to $1 billion in revenue3 = Major Carrier - Over $1 billion in revenue4 = Medium Regional Carrier - Under $20 million in revenue5 = Small Certificated Carrier6 = Commuter Carrier7 = Foreign Carrier8 = All Cargo Carrier - Domestic Only9 = Essential Air Service - Air TaxiSee Note G below.
+14,Distance,5,NUMERIC,The great circle distance in statute miles between the Origin and Destination airports.
+15,Service Class,1,CHARACTER,null
+16,Aircraft Type: Group,1,NUMERIC,This code indicates the general category of aircraft type reported. See Note J below
+17,Aircraft Type: Type,3,NUMERIC,This code indicates the specific make and model of the aircraft. The Field Length was previously 2 in the Aircraft Types Support table. It was changed to be 3. See Note J below
+18,Aircraft Type: Configuration,1,NUMERIC,Cabin Configuration Codes (See Note J below):• 1 = Passenger• 2 = Cargo• 3 = Combination Passenger/Cargo on maindeck• 4 = Float/Amphibious Passenger/Cargo
+19,Departures Performed,5,NUMERIC,null
+20,Departures Scheduled,5,NUMERIC,null
+21,Available Capacity: Payload Pounds,10,NUMERIC,null
+22,Available Seats,7,NUMERIC,"Previously named First Cabin - Since 2002, Carriers only report total available seats "
+23,Middle Cabin (No Longer Reported),0,NUMERIC,null
+24,Coach Cabin (No Longer Reported),0,NUMERIC,null
+25,Passengers Transported,7,NUMERIC,"Previously named First Cabin - Since 2002, Carriers only report total passengers transported"
+26,Middle Cabin (No Longer Reported),0,NUMERIC,null
+27,Coach Cabin (No Longer Reported),0,NUMERIC,null
+28,Freight Transported,10,NUMERIC,null
+29,Mail Transported,10,NUMERIC,null
+30,Ramp – Ramp in minutes,10,NUMERIC,Elapsed Time in Minutes
+31,Airborne – in minutes,10,NUMERIC,Elapsed Time in Minutes
+32,Carrier’s World Area Code,3,NUMERIC,See Note P below.

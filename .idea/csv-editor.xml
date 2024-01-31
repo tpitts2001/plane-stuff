@@ -45,6 +45,62 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\flight data\T100_International_Market_Data_Records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\AD.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\AF.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\CM.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\G3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\HA.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\LTMAY.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flight data\filtered for model\with quarter identification\Y4.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\price data\AAL_price_history.csv">
           <value>
             <Attribute>
@@ -60,6 +116,13 @@
           </value>
         </entry>
         <entry key="\tickers_cik.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\usa_airlines.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
