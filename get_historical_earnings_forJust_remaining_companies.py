@@ -39,7 +39,7 @@ api_key = 'AIEJB7CL4FJ3WZFY'
 output_directory = 'earnings_data'  # Change this to your desired directory
 
 # Set start time to 1:30 AM. Adjust the day if necessary.
-start_time = datetime.now().replace(hour=1, minute=30, second=0, microsecond=0)
+start_time = datetime.now().replace(hour=12, minute=6, second=0, microsecond=0)
 if datetime.now() > start_time:
     start_time += timedelta(days=1)
 
@@ -63,5 +63,5 @@ for symbol in tickers:
     else:
         print(f"Error fetching Earnings for {symbol}")
 
-    print("Waiting for 10 minutes before the next request...")
-    time.sleep(600)  # Wait for 1 minute
+    print("Waiting for 1 minute before the next request...")
+    time.sleep(60)  # Wait for 1 minute
