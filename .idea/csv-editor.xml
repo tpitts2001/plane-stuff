@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\airline_identifiers\tickers_cik.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\earnings_data\AAL_earnings_data.csv">
           <value>
             <Attribute>
