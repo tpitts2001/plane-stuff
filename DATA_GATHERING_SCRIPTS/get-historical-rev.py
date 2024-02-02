@@ -7,7 +7,7 @@ import time
 def fetch_earnings(symbol, api_key):
     url = "https://www.alphavantage.co/query"
     params = {
-        "function": "EARNINGS",
+        "function": "INCOME_STATEMENT",
         "symbol": symbol,
         "apikey": api_key
     }
@@ -38,28 +38,28 @@ def write_to_csv(data, directory, filename):
 
 # Replace with your actual API key and the path to your CSV file.
 api_key = 'AIEJB7CL4FJ3WZFY'
-csv_file_path = 'tickers_cik.csv'
+csv_file_path = '../data/airline_identifiers/tickers_cik.csv'
 
 # Specify the directory and filename where you want to save the CSV file.
-output_directory = 'earnings_data'  # Change this to your desired directory
+output_directory = 'data/rev_data'  # Change this to your desired directory
 
 tickers = read_tickers_from_csv(csv_file_path)
 all_data = []
 
 for symbol in tickers:
-    print(f"Fetching earnings_data for {symbol}...")
+    print(f"Fetching INCOME_STATEMENT for {symbol}...")
 
     earnings = fetch_earnings(symbol, api_key)
-    if earnings and "quarterlyEarnings" in earnings:
-        earnings_data = earnings["quarterlyEarnings"]
+    if earnings and "quarterlyReports" in earnings:
+        earnings_data = earnings["quarterlyReports"]
         if earnings_data:
-            output_filename = f'{symbol}_earnings_data.csv'
+            output_filename = f'{symbol}_income_data.csv'
             write_to_csv(earnings_data, output_directory, output_filename)
-            print(f"Earnings data for {symbol} written to {output_filename}")
+            print(f"Income data for {symbol} written to {output_filename}")
         else:
-            print(f"No earnings_data found for {symbol}")
+            print(f"No income_data found for {symbol}")
     else:
-        print(f"Error fetching Earnings for {symbol}")
+        print(f"Error fetching Income for {symbol}")
 
     print("Waiting for 10 minutes before the next request...")
     time.sleep(600)  # Wait for 1 minute

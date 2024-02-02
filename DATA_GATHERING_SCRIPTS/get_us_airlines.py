@@ -42,4 +42,4 @@ usa_airlines = get_airlines_by_country(api_key, 'United States')
 for airline in usa_airlines:
     print(airline['airline_name'])
 
-write_airlines_to_csv(usa_airlines, 'usa_airlines.csv')
+write_airlines_to_csv(usa_airlines, '../data/airline_identifiers/usa_airlines.csv')

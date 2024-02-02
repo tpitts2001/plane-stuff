@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\earnings_data\AAL_earnings_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\earnings_data\AAL_income_statement.csv">
           <value>
             <Attribute>
@@ -95,6 +102,13 @@
           </value>
         </entry>
         <entry key="\earnings_data\SAVE_earnings_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\earnings_data\SKYW_earnings_data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
