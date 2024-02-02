@@ -28,7 +28,7 @@ columns_to_remove = ["Dividends", "Stock Splits", "High", "Low", "Open", "Close"
 historical_data.drop(columns=columns_to_remove, inplace=True)
 
 # Define the file path for saving the CSV file
-file_path = "crude_oil_data/crude_oil_prices_2006-2019.csv"  # Replace with your desired file path
+file_path = "data/crude_oil_data/raw/crude_oil_prices_2006-2019.csv"  # Replace with your desired file path
 
 # Save the DataFrame to a CSV file in the specified location
 historical_data.to_csv(file_path)

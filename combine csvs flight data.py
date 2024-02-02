@@ -22,6 +22,6 @@ def combine_csv_in_folder(folder_path, output_file):
     print(f"Combined CSV saved as {output_file}")
 
 # Usage
-folder_path = 'flight_data/CSV/domestic'  # replace with your folder path
-output_file = 'flight_data/CSV/whole/domestic.csv'  # replace with your desired output file name
+folder_path = 'data/flight_data/CSV/domestic'  # replace with your folder path
+output_file = 'data/flight_data/CSV/whole/domestic.csv'  # replace with your desired output file name
 combine_csv_in_folder(folder_path, output_file)

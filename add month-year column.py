@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Specify the file paths
-input_file_path = 'flight_data/CSV/whole/filtered to traded companies/combined.csv'  # Replace with the path to your input CSV file
-output_file_path = 'flight_data/CSV/whole/filtered to traded companies/combined-reformatted.csv'  # Replace with the path where you want to save the new CSV file
+input_file_path = 'data/flight_data/CSV/whole/filtered to traded companies/combined.csv'  # Replace with the path to your input CSV file
+output_file_path = 'data/flight_data/CSV/whole/filtered to traded companies/combined-reformatted.csv'  # Replace with the path where you want to save the new CSV file
 
 # Read the CSV file
 df = pd.read_csv(input_file_path)
