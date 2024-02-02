@@ -17,6 +17,41 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\crude_oil_data\rolled_into_quarter_avg\quarterly_oil_prices.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\earnings_data\unformatted\VLRS_earnings_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\price_data\filtered for model\AAL_price_history.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\price_data\rolled-into-quarter\output.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\rev_data\VLRS_income_data.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\earnings_data\AAL_earnings_data.csv">
           <value>
             <Attribute>
