@@ -1,40 +1,32 @@
 import pandas as pd
-import os
 
-def date_to_fiscal_quarter(date):
-    """
-    Convert a date to a fiscal quarter string.
+# Define the path to the existing CSV file and the path for the new CSV file
+input_csv_path = 'path_to_your_input_csv.csv'  # Update this with your input CSV file path
+output_csv_path = 'path_to_your_output_csv.csv'  # Update this with your desired output CSV file path
 
-    Parameters:
-    - date: A pandas Timestamp object.
+# Load the CSV file into a DataFrame
+df = pd.read_csv(input_csv_path)
 
-    Returns:
-    - A string representing the fiscal quarter.
-    """
-    # Assuming fiscal quarters align with calendar quarters
-    fiscal_quarters = {1: '1', 2: '1', 3: '1', 4: '2', 5: '2', 6: '2',
-                       7: '3', 8: '3', 9: '3', 10: '4', 11: '4', 12: '4'}
-    return fiscal_quarters[date.month]
+# Function to determine fiscal quarter from a date
+def get_fiscal_quarter(date):
+    month = pd.to_datetime(date).month
+    if 1 <= month <= 3:
+        return 'Q1'
+    elif 4 <= month <= 6:
+        return 'Q2'
+    elif 7 <= month <= 9:
+        return 'Q3'
+    elif 10 <= month <= 12:
+        return 'Q4'
 
-def process_csv_file(input_csv, output_csv):
-    df = pd.read_csv(input_csv)
-    df['Date'] = pd.to_datetime(df['Date'])
-    df['Year'] = df['Date'].dt.year
-    df['quarter'] = df['Date'].apply(date_to_fiscal_quarter)
-    df['Price'] = df[['Open', 'High', 'Low', 'Close']].mean(axis=1)
-    df = df.drop(['Date', 'Dividends', 'Stock Splits', 'Repaired?', 'Open', 'High', 'Low', 'Close'], axis=1, errors='ignore')
-    aggregated_df = df.groupby(['Year', 'quarter'])['Price'].mean().reset_index()
-    aggregated_df.to_csv(output_csv, index=False)
+# Apply the function to determine fiscal quarter and year
+df['quarter'] = df['fiscalDateEnding'].apply(get_fiscal_quarter)
+df['year'] = pd.to_datetime(df['fiscalDateEnding']).dt.year
 
-def process_all_csvs(input_directory, output_directory):
-    for filename in os.listdir(input_directory):
-        if filename.endswith(".csv"):
-            input_csv = os.path.join(input_directory, filename)
-            output_csv = os.path.join(output_directory, filename.replace(".csv", "_processed.csv"))
-            process_csv_file(input_csv, output_csv)
-            print(f"Processed and saved: {output_csv}")
+# Extract the desired columns
+output_data = df[['operatingIncome', 'fiscalDateEnding', 'quarter', 'year']]
 
-# Example usage
-input_directory = '../data/price_data/filtered for model'
-output_directory = '../data/price_data/rolled-into-quarter'
-process_all_csvs(input_directory, output_directory)
+# Write the data to a new CSV file
+output_data.to_csv(output_csv_path, index=False)
+
+print(f"Data with operating income, fiscal date ending, quarter, and year has been successfully written to {output_csv_path}")
