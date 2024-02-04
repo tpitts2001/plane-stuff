@@ -24,7 +24,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\data\flight_data\T100_International_Market_Data_Records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\flight_data\filtered for model\AS.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\YV.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

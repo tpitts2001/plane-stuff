@@ -75,7 +75,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-csv_file_path = '../data/flight_data/legend-tabl-int-seg.csv'
+csv_file_path = '../data/airline_identifiers/legend-tabl-int-seg.csv'
 df.to_csv(csv_file_path, index=False)
 
 csv_file_path
