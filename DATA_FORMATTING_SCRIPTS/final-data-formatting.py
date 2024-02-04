@@ -1,5 +1,7 @@
 import pandas as pd
 
+#TODO: COLUMN REGRESS
+
 # Define the path to the existing CSV file and the path for the new CSV file
 input_csv_path = '../data/rev_data/ALK_income_data.csv'  # Update this with your input CSV file path
 output_csv_path = '../data/FINAL/temp/path_to_your_output_csv'  # Update this with your desired output CSV file path
