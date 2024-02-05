@@ -3,6 +3,27 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\data\airline_identifiers\T100_International_Market_Data_Records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\airline_identifiers\T_AIRCRAFT_TYPES.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\airline_identifiers\legend-tabl-int-seg.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\data\airline_identifiers\tickers_cik.csv">
           <value>
             <Attribute>
@@ -24,7 +45,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\data\flight_data\T100_International_Market_Data_Records.csv">
+        <entry key="\data\flight_data\filtered for model\AD.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\AF.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -32,6 +60,41 @@
           </value>
         </entry>
         <entry key="\data\flight_data\filtered for model\AS.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\CM.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\G3.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\HA.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\LTMAY.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\data\flight_data\filtered for model\Y4.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

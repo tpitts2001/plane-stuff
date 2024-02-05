@@ -1,0 +1,4 @@
+from ACTUAL_PROGRAM import get_data as gd
+import variables
+
+gd.download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
