@@ -7,6 +7,7 @@ import zipfile
 ##############################################################
 #correlating stuff to variables file
 
+historical_flight_data_downloaded_file_path_os_path = os.path.realpath('../../'+variables.historical_flight_data_downloaded_file_path)
 historical_flight_data_html_file_path = variables.historical_flight_data_html_file_path
 historical_flight_data_downloaded_file_path = variables.historical_flight_data_downloaded_file_path
 historical_flight_data_base_domain = variables.historical_flight_data_base_domain
@@ -76,8 +77,8 @@ def extract_date_range(filename):
     return start_date, end_date
 
 
-def process_files_in_folder(historical_flight_data_downloaded_file_path):
-    files = os.listdir(historical_flight_data_downloaded_file_path)
+def process_files_in_folder(historical_flight_data_downloaded_file_path_os_path):
+    files = os.listdir(historical_flight_data_downloaded_file_path_os_path)
 
     for filename in files:
         start_date, end_date = extract_date_range(filename)
@@ -85,12 +86,13 @@ def process_files_in_folder(historical_flight_data_downloaded_file_path):
             # Generate new filename
             new_filename = f"{start_date}-{end_date}_{filename}"
             # Construct full old and new file paths
-            old_file_path = os.path.join(historical_flight_data_downloaded_file_path, filename)
-            new_file_path = os.path.join(historical_flight_data_downloaded_file_path, new_filename)
+            old_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            new_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_filename)
             # Rename the file
             os.rename(old_file_path, new_file_path)
             print(f"Renamed '{filename}' to '{new_filename}'")
 
+process_files_in_folder(historical_flight_data_downloaded_file_path_os_path)
 
 def extract_and_delete_zip_folders(historical_flight_data_downloaded_file_path):
     # Ensure the extraction directory exists
