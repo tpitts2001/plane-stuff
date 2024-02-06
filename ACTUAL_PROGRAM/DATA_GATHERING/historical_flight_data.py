@@ -178,8 +178,8 @@ def delete_files_with_db(historical_flight_data_downloaded_file_path_os_path):
 ##############################################################################################
 
 def download_and_format_historical_flight_data():
-    #hfd.download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
-    #hfd.extract_and_delete_zip_folders(variables.historical_flight_data_downloaded_file_path)
+    download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
+    extract_and_delete_zip_folders(variables.historical_flight_data_downloaded_file_path)
     move_first_10_chars_to_back(historical_flight_data_downloaded_file_path_os_path)
     combine_flight_data_files(historical_flight_data_downloaded_file_path_os_path)
     delete_files_with_db(historical_flight_data_downloaded_file_path_os_path)
