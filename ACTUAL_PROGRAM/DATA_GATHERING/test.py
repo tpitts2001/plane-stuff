@@ -33,6 +33,21 @@ import re
 
 
 def rename_files_keep_date_range(historical_flight_data_downloaded_file_path_os_path):
+
+################## remove first two letters of filename ##########################
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        # Check if the file name has more than two characters to avoid error
+        if len(filename) > 10:
+            # Create the new file name by removing the first two characters
+            new_filename = filename[10:]
+            # Construct the full old and new file paths
+            old_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            new_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_filename)
+            # Rename the file
+            os.rename(old_file_path, new_file_path)
+            print(f'Renamed "{filename}" to "{new_filename}"')
+##################################################################################
+
     """
     Renames files in the specified directory to keep only the date range in the format "YYYYMM.YYYYMM".
 
