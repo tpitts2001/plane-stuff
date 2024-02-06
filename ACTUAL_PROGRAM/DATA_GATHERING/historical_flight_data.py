@@ -3,11 +3,16 @@ import variables
 import os
 import requests
 import zipfile
+from collections import defaultdict
+import glob
 
 ##############################################################
 #correlating stuff to variables file
+files_group = defaultdict(list)
+#historical_flight_data_downloaded_file_path_os_path = os.path.realpath('../../'+variables.historical_flight_data_downloaded_file_path)
 
-historical_flight_data_downloaded_file_path_os_path = os.path.realpath('../../'+variables.historical_flight_data_downloaded_file_path)
+historical_flight_data_downloaded_file_path_os_path = os.path.realpath(variables.historical_flight_data_downloaded_file_path)
+
 historical_flight_data_html_file_path = variables.historical_flight_data_html_file_path
 historical_flight_data_downloaded_file_path = variables.historical_flight_data_downloaded_file_path
 historical_flight_data_base_domain = variables.historical_flight_data_base_domain
@@ -76,22 +81,6 @@ def extract_date_range(filename):
             break
     return start_date, end_date
 
-
-def process_files_in_folder(historical_flight_data_downloaded_file_path_os_path):
-    files = os.listdir(historical_flight_data_downloaded_file_path_os_path)
-
-    for filename in files:
-        start_date, end_date = extract_date_range(filename)
-        if start_date and end_date:  # Ensure both dates are extracted
-            # Generate new filename
-            new_filename = f"{start_date}-{end_date}_{filename}"
-            # Construct full old and new file paths
-            old_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
-            new_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_filename)
-            # Rename the file
-            os.rename(old_file_path, new_file_path)
-            print(f"Renamed '{filename}' to '{new_filename}'")
-
 def extract_and_delete_zip_folders(historical_flight_data_downloaded_file_path):
     # Ensure the extraction directory exists
     if not os.path.exists(historical_flight_data_downloaded_file_path):
@@ -109,3 +98,90 @@ def extract_and_delete_zip_folders(historical_flight_data_downloaded_file_path):
             # After extraction, delete the zip file
             os.remove(file_path)
             print(f"Extracted and deleted '{filename}'")
+
+def move_first_10_chars_to_back(historical_flight_data_downloaded_file_path_os_path):
+
+# Use glob to find all text files if you're only interested in .txt files, for example
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        # Check if the filename is long enough to be modified
+        if len(filename) > 10:
+            # Split the filename into name and extension
+            name, extension = os.path.splitext(filename)
+            # Move the first 10 characters to the end of the name
+            new_name = name[10:] + name[:10] + extension
+            # Construct the full old and new file paths
+            old_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            new_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_name)
+            # Rename the file
+            os.rename(old_file, new_file)
+            print(f"Renamed '{filename}' to '{new_name}'")
+
+def combine_flight_data_files(historical_flight_data_downloaded_file_path_os_path):
+    """
+    Group and combine .asc files in the given directory.
+
+    Args:
+    directory_path (str): The path to the directory containing the files.
+    """
+    # Initialize a defaultdict to group files
+    files_grouped = defaultdict(list)
+
+    # List and group all .asc files by the first 13 characters of their filename
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith(".asc"):
+            # Use the first 13 characters as the key
+            group_key = filename[:13]
+            print(f'Grouped {filename}.')
+            files_grouped[group_key].append(filename)
+
+    # Combine the files in each group
+    for group_key, filenames in files_grouped.items():
+        combined_file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, f"{group_key}.asc")
+        with open(combined_file_path, 'w') as combined_file:
+            for filename in filenames:
+                file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+                with open(file_path, 'r') as file:
+                    combined_file.write(file.read() + "\n")  # Add a newline between files' content if needed
+                    print(f'Combined {file_path}.')
+
+def delete_files_with_db(historical_flight_data_downloaded_file_path_os_path):
+    """
+    Deletes all files in the specified directory that contain 'db' in their title.
+
+    Args:
+    directory_path (str): The path to the directory where files will be checked and deleted.
+    """
+    # Ensure the directory exists before proceeding
+    if not os.path.isdir(historical_flight_data_downloaded_file_path_os_path):
+        print("Directory does not exist.")
+        return
+
+    # Counter for deleted files
+    deleted_files_count = 0
+
+    # Loop through each file in the directory
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        # Check if "db" is in the file title
+        if "db" in filename:
+            # Construct the full file path
+            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            # Delete the file
+            os.remove(file_path)
+            deleted_files_count += 1
+            print(f"Deleted {file_path}")
+
+    # Print a summary of the operation
+    if deleted_files_count == 0:
+        print("No files containing 'db' found to delete.")
+    else:
+        print(f"Total deleted files containing 'db': {deleted_files_count}")
+
+
+##############################################################################################
+
+def download_and_format_historical_flight_data():
+    #hfd.download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
+    #hfd.extract_and_delete_zip_folders(variables.historical_flight_data_downloaded_file_path)
+    move_first_10_chars_to_back(historical_flight_data_downloaded_file_path_os_path)
+    combine_flight_data_files(historical_flight_data_downloaded_file_path_os_path)
+    delete_files_with_db(historical_flight_data_downloaded_file_path_os_path)
