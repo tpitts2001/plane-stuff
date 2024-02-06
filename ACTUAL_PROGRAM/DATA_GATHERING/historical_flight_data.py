@@ -8,11 +8,9 @@ import glob
 
 ##############################################################
 #correlating stuff to variables file
+
 files_group = defaultdict(list)
-#historical_flight_data_downloaded_file_path_os_path = os.path.realpath('../../'+variables.historical_flight_data_downloaded_file_path)
-
 historical_flight_data_downloaded_file_path_os_path = os.path.realpath(variables.historical_flight_data_downloaded_file_path)
-
 historical_flight_data_html_file_path = variables.historical_flight_data_html_file_path
 historical_flight_data_downloaded_file_path = variables.historical_flight_data_downloaded_file_path
 historical_flight_data_base_domain = variables.historical_flight_data_base_domain
