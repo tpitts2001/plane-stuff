@@ -92,8 +92,6 @@ def process_files_in_folder(historical_flight_data_downloaded_file_path_os_path)
             os.rename(old_file_path, new_file_path)
             print(f"Renamed '{filename}' to '{new_filename}'")
 
-process_files_in_folder(historical_flight_data_downloaded_file_path_os_path)
-
 def extract_and_delete_zip_folders(historical_flight_data_downloaded_file_path):
     # Ensure the extraction directory exists
     if not os.path.exists(historical_flight_data_downloaded_file_path):
