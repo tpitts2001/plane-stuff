@@ -1,14 +1,12 @@
-import variables
 import os
-import re
-from collections import defaultdict
-import glob
-from ACTUAL_PROGRAM.DATA_GATHERING import historical_flight_data as hfd
 import pandas as pd
 
-historical_flight_data_downloaded_file_path_os_path = os.path.realpath('../../'+variables.historical_flight_data_downloaded_file_path)
+def convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path, headers_csv_file_path):
+    # Read headers from the specified CSV file
+    headers_df = pd.read_csv(headers_csv_file_path)
+    # Assuming the headers are in the first row
+    headers = headers_df.columns.tolist()
 
-def convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path):
     # List all .asc files in the directory
     asc_files = [f for f in os.listdir(historical_flight_data_downloaded_file_path_os_path) if f.endswith('.asc')]
 
@@ -16,9 +14,8 @@ def convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path):
         # Construct the full file path
         full_asc_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, asc_file)
 
-        # Read the .asc file using pandas (assuming space-separated values)
-        # Adjust the sep parameter as needed (e.g., sep='\t' for tab-separated values)
-        df = pd.read_csv(full_asc_path, sep=' ', header=None)
+        # Read the .asc file using pandas with the specified separator and apply headers
+        df = pd.read_csv(full_asc_path, sep='|', header=None, names=headers, low_memory=False)
 
         # Construct the CSV file name
         csv_file = asc_file.replace('.asc', '.csv')
@@ -27,7 +24,4 @@ def convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path):
         # Write the dataframe to a CSV file
         df.to_csv(full_csv_path, index=False)
 
-        print(f"Converted {asc_file} to {csv_file}")
-
-# Example usage:
-convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path)
+        print(f"Converted {asc_file} to {csv_file} with headers")
