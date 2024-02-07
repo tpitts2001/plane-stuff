@@ -304,6 +304,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\historical-data\historical-flight-data\html-download-website\column-titles-test.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\historical-data\historical-flight-data\html-download-website\column-titles.csv">
           <value>
             <Attribute>
