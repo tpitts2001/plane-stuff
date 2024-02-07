@@ -1,6 +1,5 @@
 import re
 import time
-
 import variables
 import os
 import requests
@@ -476,6 +475,26 @@ def append_int_to_filenames_int(historical_flight_data_downloaded_file_path_os_p
         else:
             print(f"Skipped '{filename}' (not a file)")
 
+def remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path):
+    # Iterate over all files in the specified directory
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith('.csv'):  # Check if the file is a CSV
+            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+
+            # Read the CSV file into a DataFrame
+            df = pd.read_csv(file_path)
+
+            # Get a list of columns to drop (those containing 'null' in their name)
+            columns_to_drop = [column for column in df.columns if 'null' in column.lower()]
+
+            # Drop the columns from the DataFrame
+            df.drop(columns=columns_to_drop, inplace=True)
+
+            # Save the modified DataFrame back to CSV
+            df.to_csv(file_path, index=False)
+
+            print(f'Processed {filename}')
+
 ##############################################################################################
 #main methods
 def download_and_format_historical_flight_data():
@@ -499,6 +518,7 @@ def download_and_format_historical_flight_data_int():
     convert_asc_to_csv_int(historical_flight_data_downloaded_file_path_os_path, labels_file_path_int)
     delete_files_with_asc_int(historical_flight_data_downloaded_file_path_os_path)
     append_int_to_filenames_int(historical_flight_data_downloaded_file_path_os_path)
+    remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
     print(f"Finished downloading international historical flight data.")
 
 ###############################################################################################
