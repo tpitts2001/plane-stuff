@@ -41,7 +41,7 @@ def replace_files(source_dir, destination_dir):
 
 
 # Prompt user for source and destination folder paths
-source_folder = '/mnt/300gig-drv/PycharmProjects/plane-stuff/historical-data/historical-flight-data/temp'
-destination_folder = '/mnt/300gig-drv/PycharmProjects/plane-stuff/historical-data/historical-flight-data/raw'
+source_folder = '/mnt/300gig-drv/PycharmProjects/plane-stuff/historical-data/historical-flight-data/raw'
+destination_folder = '/mnt/300gig-drv/PycharmProjects/plane-stuff/historical-data/historical-flight-data/temp'
 
 replace_files(source_folder, destination_folder)

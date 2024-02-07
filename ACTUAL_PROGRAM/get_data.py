@@ -8,6 +8,11 @@ def get_historical_flight_data():
     hfd.download_and_format_historical_flight_data()
     return
 
+def get_historical_flight_data_int():
+    hfd.download_and_format_historical_flight_data_int()
+    return
+
+
 ###########################################################################
 #test methods
 
