@@ -5,6 +5,7 @@ import requests
 import zipfile
 from collections import defaultdict
 import glob
+import pandas as pd
 
 ##############################################################
 #correlating stuff to variables file
@@ -12,11 +13,15 @@ import glob
 files_group = defaultdict(list)
 historical_flight_data_downloaded_file_path_os_path = os.path.realpath(variables.historical_flight_data_downloaded_file_path)
 historical_flight_data_html_file_path = variables.historical_flight_data_html_file_path
+historical_flight_data_html_file_path_int = variables.historical_flight_data_html_file_path_int
 historical_flight_data_downloaded_file_path = variables.historical_flight_data_downloaded_file_path
 historical_flight_data_base_domain = variables.historical_flight_data_base_domain
+labels_file_path = variables.historical_flight_data_label_file_path
+glob_pattern = os.path.join(historical_flight_data_downloaded_file_path_os_path, '*.asc')
+asc_files = glob.glob(glob_pattern)
 
 ##############################################################
-#methods
+# domestic data methods
 
 def download_historical_flight_data(historical_flight_data_html_file_path, historical_flight_data_downloaded_file_path, historical_flight_data_base_domain):
     # Open the file and read its contents
@@ -174,12 +179,83 @@ def delete_files_with_db(historical_flight_data_downloaded_file_path_os_path):
     else:
         print(f"Total deleted files containing 'db': {deleted_files_count}")
 
+def convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path):
+    # List all .asc files in the directory
+    asc_files = [f for f in os.listdir(historical_flight_data_downloaded_file_path_os_path) if f.endswith('.asc')]
+
+    for asc_file in asc_files:
+        # Construct the full file path
+        full_asc_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, asc_file)
+
+        # Read the .asc file using pandas (assuming space-separated values)
+        # Adjust the sep parameter as needed (e.g., sep='\t' for tab-separated values)
+        df = pd.read_csv(full_asc_path, sep='|', header=None, low_memory=False)
+
+        # Construct the CSV file name
+        csv_file = asc_file.replace('.asc', '.csv')
+        full_csv_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, csv_file)
+
+        # Write the dataframe to a CSV file
+        df.to_csv(full_csv_path, index=False)
+
+        print(f"Converted {asc_file} to {csv_file}")
+
+def delete_all_ascs_in_dir(historical_flight_data_downloaded_file_path_os_path):
+    for historical_flight_data_downloaded_file_path_os_path in asc_files:
+        try:
+            os.remove(historical_flight_data_downloaded_file_path_os_path)
+            print(f"Deleted {historical_flight_data_downloaded_file_path_os_path}")
+        except Exception as e:
+            print(f"Error deleting {historical_flight_data_downloaded_file_path_os_path}: {e}")
+
+
+def add_column_labels_to_csvs(historical_flight_data_downloaded_file_path_os_path, labels_file_path):
+    # Read column labels from the file
+    with open(labels_file_path, 'r') as file:
+        column_labels = file.read().strip().split('\n')
+
+    # Iterate over all CSV files in the directory
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith('.csv'):
+            csv_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+
+            # Read the CSV file without headers
+            df = pd.read_csv(csv_path, header=None)
+
+            # Check if the CSV already has the correct number of columns to match the headers
+            if df.shape[1] == len(column_labels):
+                # Assign column labels
+                df.columns = column_labels
+
+                # Save the CSV file back with headers
+                df.to_csv(csv_path, index=False)
+            else:
+                print(f"Error: The number of columns in {filename} does not match the number of column labels.")
 
 ##############################################################################################
+# international data methods
+#todo this lol
 
+##############################################################################################
+#main methods
 def download_and_format_historical_flight_data():
     download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
     extract_and_delete_zip_folders(variables.historical_flight_data_downloaded_file_path)
     move_first_10_chars_to_back(historical_flight_data_downloaded_file_path_os_path)
     combine_flight_data_files(historical_flight_data_downloaded_file_path_os_path)
     delete_files_with_db(historical_flight_data_downloaded_file_path_os_path)
+    convert_asc_to_csv(historical_flight_data_downloaded_file_path_os_path)
+    delete_all_ascs_in_dir(historical_flight_data_downloaded_file_path_os_path)
+    add_column_labels_to_csvs(historical_flight_data_downloaded_file_path_os_path, labels_file_path)
+    print(f"Finished downloading historical flight data.")
+
+def download_and_format_historical_flight_data_int():
+    #todo this lol
+    print(f"Finished downloading international historical flight data.")
+
+###############################################################################################
+#test method
+
+def test_method():
+    add_column_labels_to_csvs(historical_flight_data_downloaded_file_path_os_path, labels_file_path)
+    print(f"Finished downloading historical flight data.")

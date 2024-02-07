@@ -3,7 +3,21 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\historical-data\airline_identifiers\T100_International_Market_Data_Records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\historical-data\airline_identifiers\T_AIRCRAFT_TYPES.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\historical-data\airline_identifiers\legend-tabl-int-seg.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
