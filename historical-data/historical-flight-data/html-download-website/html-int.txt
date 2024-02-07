@@ -33,13 +33,13 @@
 
     <!-- DAP Implementation -->
     <script async="" type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOT"></script>
-  <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/12.d0a6cbdbbd5630600180.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=www.bts.gov"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/7.cf1c493dffb2d169972c.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/1.be767510a0dcd247d2ba.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio"></script></head>
-  <body class="is-ultimenu-canvas is-ultimenu-canvas--hover layout-no-sidebars page-node-198726 path-browse-statistical-products-and-data-bts-publications-data-bank-28is-t-100-and-t-100f-international path-node node--type-article" data-new-gr-c-s-check-loaded="14.1153.0" data-gr-ext-installed="">
+  <script>bazadebezolkohpepadr="1163327016"</script><script type="text/javascript" src="https://www.bts.gov/akam/13/4556f62c" defer=""></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/12.d0a6cbdbbd5630600180.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=www.bts.gov"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/7.cf1c493dffb2d169972c.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio"></script><script charset="utf-8" src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/1.be767510a0dcd247d2ba.chunk.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio"></script></head>
+  <body class="is-ultimenu-canvas is-ultimenu-canvas--hover layout-no-sidebars page-node-198726 path-browse-statistical-products-and-data-bts-publications-data-bank-28is-t-100-and-t-100f-international path-node node--type-article" data-new-gr-c-s-check-loaded="14.1154.0" data-gr-ext-installed="">
   <noscript>Please enable JavaScript to use this site.</noscript>
     <a href="#main" class="visually-hidden focusable skip-link">
       Skip to main content
     </a>
-
+    
       <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
     <div id="page-wrapper" class="page-wrapper">
   <div id="page" class="page">
@@ -87,23 +87,23 @@
     </div>
   </div>
 </section>
-
+ 
     <section class="region region-site-notification">
-
+    
   <h2 class="sr-only">Site Notification</h2>
   <div class="block block--site-notification block--emergency block-views block-views-blocksite-notification-block-notification-emergency w-100 clearfix">
-
+    
 
 
   </div>
-
+  
       <h2 class="sr-only">Site Notification</h2>
     <div class="block block--site-notification block--warning block-views block-views-blocksite-notification-block-notification-warning w-100 clearfix">
-
+      
 
 
     </div>
-
+  
   </section>
 
  <style>
@@ -144,19 +144,19 @@
               <nav class="navbar navbar-dark navbar-expand-lg" id="navbar-main">
                 <a href="/" title="Home" rel="home" class="navbar-brand bts-brand mx-0 mt-lg-5">
               <img src="/themes/custom/bts/logo_bts.svg" alt="Home" class="img-fluid">
-
+            
     </a>
-
+    
 
                   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                       <div class="form-inline navbar-form">
                 <section class="region region-header-form">
       <nav aria-labelledby="block-header-utility-menu" id="block-header-utility" class="block block-menu navigation menu--utility">
-
+            
   <h2 class="sr-only" id="block-header-utility-menu">Header - Utility</h2>
+  
 
-
-
+        
               <ul id="block-header-utility" block="block-header-utility" class="clearfix nav justify-content-end">
                     <li class="nav-item ml-3 my-2">
                 <a href="http://transportation.libanswers.com/" class="ext" data-extlink="" target="_blank" rel="noopener">Ask-A-Librarian<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
@@ -165,15 +165,15 @@
                 <a href="/A-Z-Index" data-drupal-link-system-path="node/224996">A-Z Index</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
 <div id="block-custombtsheadersearch" class="block block-fixed-block-content block-fixed-block-contentcustom-bts-header-search">
-
-
+  
+    
       <div class="content">
-
+      
             <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="usasearch-search-block-form block block-usasearch block-usasearch-search-form-block" data-drupal-selector="usasearch-search-block-form" id="block-usasearch-form">
    <div class="search__wrapper">
       <form block="block-usasearch-form" action="https://search.usa.gov/search" method="GET" id="usasearch-search-block-form" accept-charset="UTF-8">
@@ -187,7 +187,7 @@
       </form>
    </div>
 </div></div>
-
+      
     </div>
   </div>
 
@@ -196,17 +196,17 @@
             </div>
                     <div class="collapse navbar-collapse" id="CollapsingNavbar">
               <div id="block-ultimenumainnavigation" class="block block-ultimenu block-ultimenu-blockultimenu-main">
-
-
+  
+    
       <div class="content">
       <ul id="ultimenu-main" data-ultimenu="main" class="ultimenu ultimenu--hover ultimenu--main ultimenu--htb ultimenu--horizontal ultimenu--on"><li class="ultimenu__item uitem has-ultimenu"><a href="/explore-topics-and-geography" data-drupal-link-system-path="node/224296" class="ultimenu__link">Topics and Geography<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
               <section class="ultimenu__region region region--count-3 row region-ultimenu-main-topics-and-geography">
       <nav aria-labelledby="block-main-topics-1-menu" id="block-main-topics-1" class="block block-menu navigation menu--main--topics-1">
-
+      
   <h2 id="block-main-topics-1-menu">Topics</h2>
+  
 
-
-
+        
               <ul block="block-main-topics-1" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/explore-topics-and-geography/introduction-transportation-statistics" class="nav-link nav-link--explore-topics-and-geography-introduction-transportation-statistics" data-drupal-link-system-path="node/229016">Introduction to Transportation Statistics</a>
@@ -239,16 +239,16 @@
                           <a href="/topics/transportation-and-economy" class="nav-link nav-link--topics-transportation-and-economy" data-drupal-link-system-path="node/311">Transportation and the Economy</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
   <nav aria-labelledby="block-main-topics-2-menu" id="block-main-topics-2" class="block block-menu navigation menu--main--topics-2">
-
+      
   <h2 id="block-main-topics-2-menu">Geography</h2>
+  
 
-
-
+        
               <ul block="block-main-topics-2" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/maps" class="nav-link nav-link--maps" data-drupal-link-system-path="node/224311">Transportation Maps and Geospatial Data</a>
@@ -269,16 +269,16 @@
                           <a href="/ctp" class="nav-link nav-link--ctp" data-drupal-link-system-path="node/199386">By County</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
   <nav aria-labelledby="block-main-topics-3-menu" id="block-main-topics-3" class="block block-menu navigation menu--main--topics-3">
-
+      
   <h2 id="block-main-topics-3-menu">Modes</h2>
+  
 
-
-
+        
               <ul block="block-main-topics-3" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/topics/airlines-and-airports" class="nav-link nav-link--topics-airlines-and-airports">Aviation</a>
@@ -302,7 +302,7 @@
                           <a href="/topics/bicycle-and-pedestrian" class="nav-link nav-link--topics-bicycle-and-pedestrian">Bicycles and Pedestrian</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -312,11 +312,11 @@
           </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/browse-statistical-products-and-data" data-drupal-link-system-path="node/224301" class="ultimenu__link">Statistical Products and Data<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
               <section class="ultimenu__region region region--count-3 row region-ultimenu-main-statistical-products-and">
       <nav aria-labelledby="block-main-statistical-1-menu" id="block-main-statistical-1" class="block block-menu navigation menu--main--statistical-1">
-
+            
   <h2 class="sr-only" id="block-main-statistical-1-menu">Main - Statistical 1</h2>
+  
 
-
-
+        
               <ul block="block-main-statistical-1" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/information-gallery" class="nav-link nav-link--information-gallery" data-drupal-link-system-path="node/6">Information Gallery</a>
@@ -358,16 +358,16 @@
                           <a href="/flow" class="nav-link nav-link--flow" data-drupal-link-system-path="node/234506">Freight Logistics Optimization Works (FLOW)</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
   <nav aria-labelledby="block-main-statistical-2-menu" id="block-main-statistical-2" class="block block-menu navigation menu--main--statistical-2">
-
+            
   <h2 class="sr-only" id="block-main-statistical-2-menu">Main - Statistical 2</h2>
+  
 
-
-
+        
               <ul block="block-main-statistical-2" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/product/geospatial-application-and-map-gallery" class="nav-link nav-link--product-geospatial-application-and-map-gallery" data-drupal-link-system-path="node/224276">GIS Applications</a>
@@ -400,16 +400,16 @@
                           <a href="/osra" class="nav-link nav-link--osra" data-drupal-link-system-path="node/233951">Ocean Shipping Reform Act (OSRA)</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
   <nav aria-labelledby="block-main-statistical-3-menu" id="block-main-statistical-3" class="block block-menu navigation menu--main--statistical-3">
-
+            
   <h2 class="sr-only" id="block-main-statistical-3-menu">Main - Statistical 3</h2>
+  
 
-
-
+        
               <ul block="block-main-statistical-3" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/pocketguide" class="nav-link nav-link--pocketguide" data-drupal-link-system-path="node/118881">Pocket Guide</a>
@@ -448,7 +448,7 @@
                           <a href="/vius" class="nav-link nav-link--vius" data-drupal-link-system-path="node/226021">Vehicle Inventory and Use Survey (VIUS)</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -458,11 +458,11 @@
           </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/ntl" data-drupal-link-system-path="node/229051" class="ultimenu__link">National Transportation Library<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
               <section class="ultimenu__region region region--count-1 row region-ultimenu-main-national-transportation">
       <nav aria-labelledby="block-main-library-menu" id="block-main-library" class="block block-menu navigation menu--main--library">
-
+            
   <h2 class="sr-only" id="block-main-library-menu">Main - Library</h2>
+  
 
-
-
+        
               <ul block="block-main-library" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="https://rosap.ntl.bts.gov" class="nav-link nav-link-https--rosapntlbtsgov">Digital Repository (ROSA P)</a>
@@ -495,7 +495,7 @@
                           <a href="/ntl/about" class="nav-link nav-link--ntl-about" data-drupal-link-system-path="node/118461">About the NTL</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -505,11 +505,11 @@
           </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/newsroom" data-drupal-link-system-path="node/230276" class="ultimenu__link">Newsroom<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
               <section class="ultimenu__region region region--count-1 row region-ultimenu-main-newsroom">
       <nav aria-labelledby="block-main-newsroom-menu" id="block-main-newsroom" class="block block-menu navigation menu--main--newsroom">
-
+            
   <h2 class="sr-only" id="block-main-newsroom-menu">Main - Newsroom</h2>
+  
 
-
-
+        
               <ul block="block-main-newsroom" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/statistical-releases" class="nav-link nav-link--statistical-releases" data-drupal-link-system-path="statistical-releases">News and Statistical Releases</a>
@@ -518,7 +518,7 @@
                           <a href="/events" class="nav-link nav-link--events" data-drupal-link-system-path="events">Release Schedule</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -528,11 +528,11 @@
           </section></li><li class="ultimenu__item uitem has-ultimenu"><a href="/learn-about-bts-and-our-work" data-drupal-link-system-path="node/224306" class="ultimenu__link">About BTS<span class="caret is-caret" aria-hidden="true"></span></a><section class="ultimenu__flyout is-htb">
               <section class="ultimenu__region region region--count-1 row region-ultimenu-main-about-bts">
       <nav aria-labelledby="block-main-about-menu" id="block-main-about" class="block block-menu navigation menu--main--about">
-
+            
   <h2 class="sr-only" id="block-main-about-menu">Main - About</h2>
+  
 
-
-
+        
               <ul block="block-main-about" class="clearfix nav navbar-nav">
                     <li class="nav-item">
                           <a href="/about-BTS" class="nav-link nav-link--about-bts" data-drupal-link-system-path="node/8581">Overview</a>
@@ -562,7 +562,7 @@
                           <a href="/learn-about-bts-and-our-work/history-bts" class="nav-link nav-link--learn-about-bts-and-our-work-history-bts" data-drupal-link-system-path="node/30416">History of BTS</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -596,21 +596,15 @@
 
               <div class="container">
             <div id="block-breadcrumbs" class="block block-system block-system-breadcrumb-block">
-
-
+  
+    
       <div class="content">
-
+      
 
   <nav role="navigation" aria-label="breadcrumb">
     <ol class="breadcrumb">
                   <li class="breadcrumb-item">
           <a href="/">Home</a>
-        </li>
-                        <li class="breadcrumb-item">
-          <a href="/browse-statistical-products-and-data">Browse Statistical Products and Data</a>
-        </li>
-                        <li class="breadcrumb-item">
-          <a href="/browse-statistical-products-and-data/bts-publications">BTS Publications</a>
         </li>
               </ol>
   </nav>
@@ -620,47 +614,47 @@
 
 
         </div>
-
-
-
-
+      
+      
+      
+      
       <div id="main-wrapper" class="layout-main-wrapper clearfix">
                   <div id="main" class="container">
 
             <div class="row row-offcanvas row-offcanvas-left clearfix">
 
-
-
+              
+              
                               <!-- Main Content Region -->
                 <div class="main-content col order-last" id="content" role="main">
                   <section class="section pb-5">
                     <a id="main-content" tabindex="-1"></a>
                       <div data-drupal-messages-fallback="" class="hidden"></div><div id="block-mainpagecontent" class="block block-system block-system-main-block">
-
-
+  
+    
       <div class="content">
-
+      
 
 <article data-history-node-id="198726" class="node node--type-article node--view-mode-full content__core clearfix">
   <div class="node__content mt-0 clearfix">
+        
+    
 
-
-
-
+    
       <h1 class="page__title node__title mt-0"><span class="field field--name-title field--type-string field--label-hidden">Data Bank 28IS - T-100 and T-100(f) International Segment Data, U.S. and Foreign Air Carriers Traffic and Capacity Data</span>
 </h1>
+    
 
-
-
+    
           <div class="mb-4"> Thursday, March 12, 2020</div>
-
+    
           <div class="mb-4 clearfix">
-
+        
         <p>This CD presents data reported by U.S. carriers operating between airports located within the boundaries of the United States and its territories. These data are often referred to as either "market" or on-flight origin and destination records. The data fields contain information on passengers, freight, and/or mail enplaned at the origin airport and deplaned at the destination airport. This CD presents 12 months of data.&nbsp;</p><p>This is a new file that includes a new field, Carrier World Area Code (WAC), at the end of each record. This field indicates a carrier's world area. This is useful for grouping foreign carriers (Carrier WAC &gt; 100) from U.S. Carriers (Carrier WAC &lt; 100).&nbsp;</p><p>Data are available since 1990.</p><p>NOTE: If you are interested in any aviation data not listed below or if you have any questions, please email <a href="mailto:answers@dot.gov" class="mailto" data-extlink="">answers@dot.gov<svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg></a></p><ul><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201810.201909.REL01.04MAR2020.zip">September 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201809.201908.REL01.04FEB2020.zip">August 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201808.201907.REL01.07JAN2020.zip">July&nbsp;2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201807.201906.REL01.04DEC2019.zip">June 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201806.201905.REL01.08NOV2019.zip">May 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201805.201904.REL01.05OCT2019.zip">April&nbsp;2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201804.201903.REL01.05SEP2019.zip">March&nbsp;2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201803.201902.REL01.08AUG2019.zip">February 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201802.201901.REL01.06JUL2019.zip">January 2019</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201801.201812.REL01.08JUN2019.zip">December 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201712.201811.REL01.08MAY2019.zip">November 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201711.201810.REL01.09APR2019.zip">October 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201710.201809.REL01.07MAR2019.zip">September 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201709.201808.REL01.08FEB2019.zip">August 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201708.201807.REL01.30JAN2019.zip">July 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201707.201806.REL01.07DEC2018.zip">June 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201706.201805.REL01.09NOV2018.zip">May 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201705.201804.REL01.05OCT2018.zip">April 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201704.201803.REL01.11SEP2018.zip">March 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201703.201802.REL01.10AUG2018.zip">February 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201702.201801.REL01.04JUL2018.zip">January 2018</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201701.201712.REL01.08JUN2018.zip">December 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201612.201711.REL01.03MAY2018.zip">November 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201611.201710.REL01.11APR2018.zip">October 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201610.201709.REL01.07MAR2018.zip">September 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201609.201708.REL01.09FEB2018.zip">August 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201608.201707.REL01.04JAN2018.zip">July 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201607.201706.REL01.07DEC2017.zip">June 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201606.201705.REL01.08NOV2017.zip">May 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201605.201704.REL01.04OCT2017.zip">April 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201603.201702.REL01.04AUG2017.zip">February 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201602.201701.REL01.12JUL2017.zip">January 2017</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201601.201612.REL01.08JUN2017.zip">December 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201512.201611.REL01.03MAY2017.zip">November 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201511.201610.REL01.06APR2017.zip">October 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201510.201609.REL01.09MAR2017.zip">September 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201509.201608.REL01.11FEB2017.zip">August 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201508.201607.REL01.06JAN2017.zip">July 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201507.201606.REL01.14DEC2016.zip">June 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201506.201605.REL01.03NOV2016.zip">May 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201505.201604.REL02.12OCT2016.zip">April 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201504.201603.REL01.07SEP2016.zip">March 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201503.201602.REL01.09AUG2016.zip">February 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201502.201601.REL01.08JUL2016.zip">January 2016</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201501.201512.REL01.08JUN2016.zip">December 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201412.201511.REL01.04MAY2016.zip">November 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201411.201510.REL01.07APR2016.zip">October 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201410.201509.REL01.11MAR2016.zip">September 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201409.201508.REL01.03FEB2016.zip">August 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201408.201507.REL02.09JAN2016.zip">July 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201407.201506.REL01.03DEC2015.zip">June 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201406.201505.REL01.06NOV2015.zip">May 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201405.201504.REL01.08OCT2015.zip">April 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201404.201503.REL01.04SEP2015.zip">March 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201403.201502.REL01.11AUG2015.zip">February 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201402.201501.REL01.08JUL2015.zip">January 2015</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201401.201412.REL01.09JUN2015.zip">December 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201312.201411.REL01.06MAY2015.zip">November 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201311.201410.REL01.08APR2015.zip">October 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201310.201409.REL01.04MAR2015.zip">September 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201309.201408.REL01.11FEB2015.zip">August 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201308.201407.REL01.08JAN2015.zip">July 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201307.201406.REL01.03DEC2014.zip">June 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201306.201405.REL01.06NOV2014.zip">May 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201305.201404.REL01.08OCT2014.zip">April 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201304.201403.REL01.04SEP2014.zip">March 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201303.201402.REL01.06AUG2014.zip">February 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201302.201401.REL01.04JUL2014.zip">January 2014</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201301.201312.REL01.04JUN2014.zip">December 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201212.201311.REL01.07MAY2014.zip">November 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201211.201310.REL01.02APR2014.zip">October 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201210.201309.REL02.21MAR2014.zip">September 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201209.201308.REL01.05FEB2014.zip">August 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201208.201307.REL01.10JAN2014.zip">July 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201207.201306.REL01.04DEC2013.zip">June 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201206.201305.REL01.06NOV2013.zip">May 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201205.201304.REL01.23OCT2013.zip">April 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201204.201303.REL01.04SEP2013.zip">March 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201203.201302.REL01.07AUG2013.zip">February 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201202.201301.REL01.10JUL2013.zip">January 2013</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201201.201212.REL01.05JUN2013.zip">December 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201112.201211.REL01.08MAY2013.zip">November 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201111.201210.REL01.11APR2013.zip">October 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201110.201209.REL01.07MAR2013.zip">September 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201109.201208.REL02.13FEB2013.zip">August 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201108.201207.REL01.10JAN2013.zip">July 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201107.201206.REL02.18DEC2012.zip">June 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201106.201205.REL01.06NOV2012.zip">May 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201105.201204.REL02.12OCT2012.zip">April 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201104.201203.REL01.08SEP2012.zip">March 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201103.201202.REL01.08AUG2012.zip">February 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201102.201201.REL01.04JUL2012.zip">January 2012</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201101.201112.REL01.06JUN2012.zip">December 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201012.201111.REL01.03MAY2012.zip">November 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201011.201110.REL01.05APR2012.zip">October 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201010.201109.REL01.07MAR2012.zip">September 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201009.201108.REL01.10FEB2012.zip">August 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201008.201107.REL01.06JAN2012.zip">July 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201007.201106.REL01.30NOV2011.zip">June 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201006.201105.REL01.08NOV2011.zip">May 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201005.201104.REL01.05OCT2011.zip">April 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201004.201103.REL01.07SEP2011.zip">March 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201003.201102.REL01.06AUG2011.zip">February 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201002.201101.REL01.07JUL2011.zip">January 2011</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.201001.201012.REL01.08JUN2011.zip">December 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200912.201011.REL01.04MAY2011.zip">November 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200911.201010.REL01.07APR2011.zip">October 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200910.201009.REL01.02MAR2011.zip">September 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200909.201008.REL02.04FEB2011.zip">August 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200908.201007.REL01.05JAN2011.zip">July 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200907.201006.REL02.03DEC2010.zip">June 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200906.201005.REL01.02NOV2010.zip">May 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200905.201004.REL01.06OCT2010.zip">April 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200904.201003.REL01.08SEP2010.zip">March 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200903.201002.REL01.03AUG2010.zip">February 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200902.201001.REL02.09JUL2010.zip">January 2010</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200901.200912.REL01.03JUN2010.zip">December 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200812.200911.REL03.20MAY2010.zip">November 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200811.200910.REL01.07APR2010.zip">October 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200810.200909.REL01.02MAR2010.zip">September 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200809.200908.REL01.02FEB2010.zip">August 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200808.200907.REL01.08JAN2010.zip">July 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200807.200906.REL02.04DEC2009.zip">June 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200806.200905.REL01.04NOV2009.zip">May 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200805.200904.REL01.06OCT2009.zip">April 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200804.200903.REL01.01SEP2009.zip">March 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200803.200902.REL01.04AUG2009.zip">February 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200802.200901.REL01.08JUL2009.zip">January 2009</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200801.200812.REL02.07JUN2009.zip">December 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200712.200811.REL01.07MAY2009.zip">November 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200711.200810.REL01.08APR2009.zip">October 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200710.200809.REL02.25MAR2009.zip">September 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200709.200808.REL01.03FEB2009.zip">August 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200708.200807.REL02.03FEB2009.zip">July 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200707.200806.REL01.03DEC2008.zip">June 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200706.200805.REL02.12NOV2008.zip">May 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200705.200804.REL01.15OCT2008.zip">April 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200704.200803.REL02.04SEP2008.zip">March 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200703.200802.REL01.12AUG2008.zip">February 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200702.200801.REL02.08JUL2008.zip">January 2008</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200701.200712.REL04.25MAR2009.zip">December 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200612.200711.REL01.13MAY2008.zip">November 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200611.200710.REL01.08APR2008.zip">October 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200610.200709.REL01.11MAR2008.zip">September 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200609.200708.REL01.12FEB2008.zip">August 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200608.200707.REL02.15JAN2008.zip">July 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200607.200706.REL01.11DEC2007.zip">June 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200606.200705.REL01.13NOV2007.zip">May 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200605.200704.REL01.10OCT2007.zip">April 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200604.200703.REL01.11SEP2007.zip">March 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200603.200702.REL01.14AUG2007.zip">February 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200602.200701.REL01.10JUL2007.zip">January 2007</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200601.200612.REL03.19MAR2009.zip">December 2006</a></li><li><a href="/sites/bts.dot.gov/files/docs/airline-data/international-segments/FD.DB28IS.200501.200512.REL04.18MAR2009.zip">December 2005</a></li></ul><p>NOTE: If you want to purchase an aviation data CD, place a bulk order or have any questions, please email at&nbsp;ritainfo@dot.gov.&nbsp;<br>To download airline CD documentation, go to&nbsp;https://ntl.custhelp.com/app/answers/ detail/a_id/437</p>
       </div>
-
-
-
+      
+    
+    
     <aside class="subcontent section w-100 clearfix" role="complementary">
       <!-- This block where the sidecontent is located @media (max-width:800px) -->
     </aside>
@@ -674,13 +668,13 @@
 
                   </section>
                 </div>
-
+              
               <!-- Sub Content Region -->
                           </div>
           </div>
               </div>
 
-
+      
           </main>
 
      <footer class="site-footer">
@@ -688,10 +682,10 @@
               <div class="site-footer__top">
             <section class="region region-footer-left">
     <div id="block-footer-contact-info" class="block block-fixed-block-content block-fixed-block-contentfooter-contact-info">
-
-
+  
+    
       <div class="content">
-
+      
             <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>U.S. DEPARTMENT OF TRANSPORTATION</p>
 
 <p><strong>Bureau of Transportation Statistics</strong></p>
@@ -702,7 +696,7 @@
 
 <p>800-853-1351</p>
 </div>
-
+      
     </div>
   </div>
 
@@ -710,10 +704,10 @@
 
             <section class="region region-footer-right">
     <div id="block-footer-social" class="block block-fixed-block-content block-fixed-block-contentfooter-social">
-
-
+  
+    
       <div class="content">
-
+      
             <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a class="subscribe-button" href="https://public.govdelivery.com/accounts/USDOT/subscriber/new?category_id=USDOT_C17">Subscribe to email updates</a></p>
 
 <ul class="footer-social">
@@ -723,7 +717,7 @@
 	<li><a href="https://public.govdelivery.com/accounts/USDOT/subscriber/new?category_id=USDOT_C17"><span class="fontawesome-icon-inline"><i class="fas fa-envelope"></i></span></a></li>
 </ul>
 </div>
-
+      
     </div>
   </div>
 
@@ -733,11 +727,11 @@
                     <div class="site-footer__bottom">
             <section class="region region-footer-first">
       <nav aria-labelledby="block-newfooternav1-menu" id="block-newfooternav1" class="block block-menu navigation menu--new-footer-nav-1">
-
+      
   <h2 id="block-newfooternav1-menu">About</h2>
+  
 
-
-
+        
               <ul block="block-newfooternav1" class="clearfix nav">
                     <li class="nav-item">
                 <a href="/about-BTS" class="nav-link nav-link--about-bts" data-drupal-link-system-path="node/8581">About BTS</a>
@@ -755,7 +749,7 @@
                 <a href="https://www.transportation.gov/administrations/research-and-technology" class="nav-link nav-link-https--wwwtransportationgov-administrations-research-and-technology">DOT Research and Technology (OST-R)</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -764,11 +758,11 @@
 
             <section class="region region-footer-second">
       <nav aria-labelledby="block-newfooternav2-menu" id="block-newfooternav2" class="block block-menu navigation menu--new-footer-nav-2">
-
+      
   <h2 id="block-newfooternav2-menu">Resources</h2>
+  
 
-
-
+        
               <ul block="block-newfooternav2" class="clearfix nav">
                     <li class="nav-item">
                 <a href="https://transportation.libanswers.com/form.php?queue_id=1810" class="nav-link nav-link-https--transportationlibanswerscom-formphpqueue-id1810 ext" data-extlink="" target="_blank" rel="noopener">Ask a Librarian<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
@@ -786,7 +780,7 @@
                 <a href="/archive/publications/the_changing_face_of_transportation/appendix_b" class="nav-link nav-link--archive-publications-the-changing-face-of-transportation-appendix-b" data-drupal-link-system-path="node/191916">Acronym Guide</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
@@ -795,11 +789,11 @@
 
             <section class="region region-footer-third">
       <nav aria-labelledby="block-newfooternav3-menu" id="block-newfooternav3" class="block block-menu navigation menu--new-footer-nav-3">
-
+      
   <h2 id="block-newfooternav3-menu">Policies, Rights and Legal</h2>
+  
 
-
-
+        
               <ul block="block-newfooternav3" class="clearfix nav">
                     <li class="nav-item">
                 <a href="https://www.transportation.gov/about" class="nav-link nav-link-https--wwwtransportationgov-about">About DOT</a>
@@ -838,15 +832,15 @@
                 <a href="https://www.transportation.gov/web-standards" class="nav-link nav-link-https--wwwtransportationgov-web-standards">Web Standards</a>
               </li>
         </ul>
-
+  
 
 
   </nav>
 
   </section>
 
-
-
+          
+          
         </div>
           </div>
   </footer>
@@ -856,13 +850,13 @@
 
   </div>
 
-
+    
     <script src="/sites/bts.dot.gov/files/js/js_LTDRwJM4NVOc7qT0Er-EpdPZfpfm8Oodu25qgBuLQDE.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=bts&amp;include=eJxtkd1uwyAMhV-IhJvteZABh6IajDC0y9uPrWmrJL1B8udfzsGfVsEsEckbj-JqLC1y1viZGyeiAnMgNJCB1had6CNQBSqECuUiJtTo9SGeLXOTsaB8KVmlYdIWBFViD6QDsQWapK0Uc9jgwrnBHYUTmu-NccFsBLIY57Py3IxLcmx_4v2A1wHGQq2Rj122nQb9ocOQQfY3DNVG7VX72gvQvIXKMREUiZbYXbXjiqOyQPZmywztiPSDTU-mpI0QiDOaIVEhaCjasl8nRzB8OH0is8cztRXBu9qTVZ1aTJj7w155xxdItteA9Y14WRzkG8hculw837O6RbyL_n_nYUGnD9tegpxTe_WexrwbDq7-AkpABxE"></script>
 <script src="/modules/contrib/extlink/extlink.js?v=10.2.2"></script>
 <script src="/sites/bts.dot.gov/files/js/js_IXkYC-7gxlQ8PkdST1_1YsesZgA73pBWsVgPL9dC-OQ.js?scope=footer&amp;delta=2&amp;language=en&amp;theme=bts&amp;include=eJxtkd1uwyAMhV-IhJvteZABh6IajDC0y9uPrWmrJL1B8udfzsGfVsEsEckbj-JqLC1y1viZGyeiAnMgNJCB1had6CNQBSqECuUiJtTo9SGeLXOTsaB8KVmlYdIWBFViD6QDsQWapK0Uc9jgwrnBHYUTmu-NccFsBLIY57Py3IxLcmx_4v2A1wHGQq2Rj122nQb9ocOQQfY3DNVG7VX72gvQvIXKMREUiZbYXbXjiqOyQPZmywztiPSDTU-mpI0QiDOaIVEhaCjasl8nRzB8OH0is8cztRXBu9qTVZ1aTJj7w155xxdItteA9Y14WRzkG8hculw837O6RbyL_n_nYUGnD9tegpxTe_WexrwbDq7-AkpABxE"></script>
 <script src="https://unpkg.com/slide-element@2.3.1/dist/index.umd.js"></script>
 <script src="/sites/bts.dot.gov/files/js/js_OuSty8HUmYWwKBPDLnICzjYjvZ_TEJ97oWqav3JTpxw.js?scope=footer&amp;delta=4&amp;language=en&amp;theme=bts&amp;include=eJxtkd1uwyAMhV-IhJvteZABh6IajDC0y9uPrWmrJL1B8udfzsGfVsEsEckbj-JqLC1y1viZGyeiAnMgNJCB1had6CNQBSqECuUiJtTo9SGeLXOTsaB8KVmlYdIWBFViD6QDsQWapK0Uc9jgwrnBHYUTmu-NccFsBLIY57Py3IxLcmx_4v2A1wHGQq2Rj122nQb9ocOQQfY3DNVG7VX72gvQvIXKMREUiZbYXbXjiqOyQPZmywztiPSDTU-mpI0QiDOaIVEhaCjasl8nRzB8OH0is8cztRXBu9qTVZ1aTJj7w155xxdItteA9Y14WRzkG8hculw837O6RbyL_n_nYUGnD9tegpxTe_WexrwbDq7-AkpABxE"></script>
 
-
+  <noscript><img src="https://www.bts.gov/akam/13/pixel_4556f62c?a=dD1iYjk3Y2QxODllNTgxYjcwN2VhNzljMWFmMGE3MzhkMjBjMjM5MTM3JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
 
 <button data-ultimenu-button="#ultimenu-main" class="button button--ultimenu" aria-label="Menu" value="Menu"><span class="bars">Menu</span></button><script type="text/javascript" src="https://zn5zoa3vxq9g9iftp-dotocio.gov1.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_5zoA3vXq9g9IftP"></script><script src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/CoreModule.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio" defer=""></script><script src="https://gov1.siteintercept.qualtrics.com/dxjsmodule/PopOverModule.js?Q_CLIENTVERSION=1.106.0&amp;Q_CLIENTTYPE=web&amp;Q_BRANDID=dotocio" defer=""></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
