@@ -4,9 +4,9 @@ import variables
 ###########################################################################
 #main methods
 
-#gd.get_historical_flight_data()
+gd.get_historical_flight_data()
 
 ############################################################################
 #test methods
 
-gd.get_historical_flight_data_test()
+#gd.get_historical_flight_data_test()

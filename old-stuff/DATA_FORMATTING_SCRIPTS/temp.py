@@ -2,7 +2,6 @@ import time
 
 import pandas as pd
 
-#TODO: COLUMN REGRESS
 
 # Define the path to the existing CSV file and the path for the new CSV file
 input_csv_path = '../../historical-data/rev_data/ALK_income_data.csv'  # Update this with your input CSV file path
