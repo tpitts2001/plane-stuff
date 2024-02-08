@@ -12,6 +12,9 @@ def get_historical_flight_data_int():
     hfd.download_and_format_historical_flight_data_int()
     return
 
+def filter_and_combine_historical_flight_data():
+    hfd.filter_and_combine()
+    return
 
 ###########################################################################
 #test methods

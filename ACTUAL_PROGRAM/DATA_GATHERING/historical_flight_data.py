@@ -1,5 +1,4 @@
 import re
-import time
 import variables
 import os
 import requests
@@ -21,6 +20,10 @@ labels_file_path = variables.historical_flight_data_label_file_path
 labels_file_path_int = variables.historical_flight_data_label_file_path_int
 glob_pattern = os.path.join(historical_flight_data_downloaded_file_path_os_path, '*.asc')
 asc_files = glob.glob(glob_pattern)
+designated_alpha_codes = variables.designated_alpha_codes
+historical_flight_data_output_folder_path = variables.historical_flight_data_output_folder_path
+filename = 'filename'
+historical_flight_data_output_file_path = os.path.join(historical_flight_data_output_folder_path, filename)
 
 ##############################################################
 # domestic data methods
@@ -490,6 +493,28 @@ def remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
             print(f'Processed {filename}')
 
 ##############################################################################################
+#filter and combine
+def filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
+    # Check if the output folder exists, if not, create it
+    if not os.path.exists(historical_flight_data_output_file_path):
+        os.makedirs(historical_flight_data_output_file_path)
+
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith('.csv'):  # Check if the file is a CSV
+            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+
+            # Read the CSV file
+            df = pd.read_csv(file_path)
+
+            # Filter the DataFrame
+            filtered_df = df[df["Carrier Alpha Code"].isin(list(designated_alpha_codes))]
+
+            # Save the filtered DataFrame to a new CSV file
+            filtered_df.to_csv(historical_flight_data_output_file_path, index=False)
+
+            print("Filtered CSV file saved to", historical_flight_data_output_file_path)
+
+##############################################################################################
 #main methods
 def download_and_format_historical_flight_data():
     download_historical_flight_data(variables.historical_flight_data_html_file_path, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
@@ -502,8 +527,6 @@ def download_and_format_historical_flight_data():
     print(f"Finished downloading historical flight data.")
 
 def download_and_format_historical_flight_data_int():
-    #todo this lol
-
     download_historical_flight_data_int(variables.historical_flight_data_html_file_path_int, variables.historical_flight_data_downloaded_file_path, variables.historical_flight_data_base_domain)
     extract_and_delete_zip_folders_int(variables.historical_flight_data_downloaded_file_path)
     move_first_10_chars_to_back_int(historical_flight_data_downloaded_file_path_os_path)
@@ -515,9 +538,12 @@ def download_and_format_historical_flight_data_int():
     append_int_to_filenames_int(historical_flight_data_downloaded_file_path_os_path)
     print(f"Finished downloading international historical flight data.")
 
+def filter_and_combine():
+    filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_folder_path)
+    print(f'Filtered and combined historical flight data.')
 ###############################################################################################
 #test method
 
 def test_method():
-    delete_files_with_asc(historical_flight_data_downloaded_file_path)
-    print(f"Finished downloading historical flight data.")
+    filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_folder_path)
+    print(f'Filtered and combined historical flight data.')
