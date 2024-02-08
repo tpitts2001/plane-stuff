@@ -22,8 +22,7 @@ glob_pattern = os.path.join(historical_flight_data_downloaded_file_path_os_path,
 asc_files = glob.glob(glob_pattern)
 designated_alpha_codes = variables.designated_alpha_codes
 historical_flight_data_output_folder_path = variables.historical_flight_data_output_folder_path
-filename = 'filename'
-historical_flight_data_output_file_path = os.path.join(historical_flight_data_output_folder_path, filename)
+historical_flight_data_output_file_path = os.path.join(historical_flight_data_output_folder_path, 'historical-flight-data.csv')
 
 ##############################################################
 # domestic data methods
@@ -494,6 +493,28 @@ def remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
 
 ##############################################################################################
 #filter and combine
+
+def combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
+    # List to hold historical-data from each CSV file
+    all_data = []
+
+    # Iterate over all files in the folder
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith('.csv'):
+            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            # Read the CSV file and append to list
+            df = pd.read_csv(file_path)
+            all_data.append(df)
+            print('Appened file ' +filename+ ' to df.' )
+
+    # Concatenate all dataframes
+    combined_df = pd.concat(all_data, ignore_index=True)
+
+    # Save the combined dataframe to a new CSV file
+    combined_df.to_csv(historical_flight_data_output_file_path, index=False)
+
+    print('Combined and saved to'+historical_flight_data_output_file_path+'.')
+
 def filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
     # Check if the output folder exists, if not, create it
     if not os.path.exists(historical_flight_data_output_file_path):
@@ -545,5 +566,5 @@ def filter_and_combine():
 #test method
 
 def test_method():
-    filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_folder_path)
+    combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
     print(f'Filtered and combined historical flight data.')
