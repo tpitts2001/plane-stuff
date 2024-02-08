@@ -109,17 +109,17 @@ def move_first_10_chars_to_back(historical_flight_data_downloaded_file_path_os_p
 # Use glob to find all text files if you're only interested in .txt files, for example
     for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
         # Check if the filename is long enough to be modified
-        if len(filename) > 10:
-            # Split the filename into name and extension
-            name, extension = os.path.splitext(filename)
-            # Move the first 10 characters to the end of the name
-            new_name = name[10:] + name[:10] + extension
-            # Construct the full old and new file paths
-            old_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
-            new_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_name)
-            # Rename the file
-            os.rename(old_file, new_file)
-            print(f"Renamed '{filename}' to '{new_name}'")
+        if len(filename) > 10 and filename.endswith(".asc"):
+                # Split the filename into name and extension
+                name, extension = os.path.splitext(filename)
+                # Move the first 10 characters to the end of the name
+                new_name = name[10:] + name[:10] + extension
+                # Construct the full old and new file paths
+                old_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+                new_file = os.path.join(historical_flight_data_downloaded_file_path_os_path, new_name)
+                # Rename the file
+                os.rename(old_file, new_file)
+                print(f"Renamed '{filename}' to '{new_name}'")
 
 def combine_flight_data_files(historical_flight_data_downloaded_file_path_os_path):
     """
@@ -321,7 +321,7 @@ def move_first_10_chars_to_back_int(historical_flight_data_downloaded_file_path_
 # Use glob to find all text files if you're only interested in .txt files, for example
     for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
         # Check if the filename is long enough to be modified
-        if len(filename) > 10:
+        if len(filename) > 10 and filename.endswith(".asc"):
             # Split the filename into name and extension
             name, extension = os.path.splitext(filename)
             # Move the first 10 characters to the end of the name
@@ -334,12 +334,6 @@ def move_first_10_chars_to_back_int(historical_flight_data_downloaded_file_path_
             print(f"Renamed '{filename}' to '{new_name}'")
 
 def combine_flight_data_files_int(historical_flight_data_downloaded_file_path_os_path):
-    """
-    Group and combine .asc files in the given directory.
-
-    Args:
-    directory_path (str): The path to the directory containing the files.
-    """
     # Initialize a defaultdict to group files
     files_grouped = defaultdict(list)
 
@@ -517,8 +511,8 @@ def download_and_format_historical_flight_data_int():
     delete_files_with_db_int(historical_flight_data_downloaded_file_path_os_path)
     convert_asc_to_csv_int(historical_flight_data_downloaded_file_path_os_path, labels_file_path_int)
     delete_files_with_asc_int(historical_flight_data_downloaded_file_path_os_path)
-    append_int_to_filenames_int(historical_flight_data_downloaded_file_path_os_path)
     remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
+    append_int_to_filenames_int(historical_flight_data_downloaded_file_path_os_path)
     print(f"Finished downloading international historical flight data.")
 
 ###############################################################################################
