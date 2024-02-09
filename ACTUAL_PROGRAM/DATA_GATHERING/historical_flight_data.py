@@ -546,14 +546,17 @@ def combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, h
 
     print('Combined and saved to'+historical_flight_data_output_file_path+'.')
 
-def filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
+def filter_by_alpha_codes(historical_flight_data_output_file_path):
     # Check if the output folder exists, if not, create it
     if not os.path.exists(historical_flight_data_output_file_path):
         os.makedirs(historical_flight_data_output_file_path)
 
-    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+    for filename in os.listdir(historical_flight_data_output_file_path):
         if filename.endswith('.csv'):  # Check if the file is a CSV
-            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+
+            print('Filtering csv...')
+
+            file_path = os.path.join(historical_flight_data_output_file_path, filename)
 
             # Read the CSV file
             df = pd.read_csv(file_path)
@@ -562,6 +565,7 @@ def filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, h
             filtered_df = df[df["Carrier Alpha Code"].isin(list(designated_alpha_codes))]
 
             # Save the filtered DataFrame to a new CSV file
+            historical_flight_data_output_file_path2 = 'historical-data/historical-flight-data/formatted/filtered.csv'
             filtered_df.to_csv(historical_flight_data_output_file_path, index=False)
 
             print("Filtered CSV file saved to", historical_flight_data_output_file_path)
