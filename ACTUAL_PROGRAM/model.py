@@ -5,6 +5,8 @@ from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_squared_error
+
 import variables
 
 # Load CSV data
@@ -77,4 +79,9 @@ for epoch in range(n_epochs):
 
 print("Training complete")
 
-# You may want to add code here to evaluate the model on the test set
+# Evaluate the model on the test set
+model.eval()  # Set the model to evaluation mode
+with torch.no_grad():
+    predictions = model(X_test_tensor)
+    mse = mean_squared_error(y_test_tensor.numpy(), predictions.numpy())
+    print(f"Test MSE: {mse:.4f}")
