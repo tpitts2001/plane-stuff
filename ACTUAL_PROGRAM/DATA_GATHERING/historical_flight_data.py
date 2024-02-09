@@ -494,6 +494,37 @@ def remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
 ##############################################################################################
 #filter and combine
 
+def delete_repeating_rows(historical_flight_data_downloaded_file_path_os_path):
+    csv_files = glob.glob(os.path.join(historical_flight_data_downloaded_file_path_os_path, '*.csv'))
+    unique_rows = set()
+    duplicates = set()
+
+    # Step 1: Identify all unique rows and duplicates
+    for file in csv_files:
+        df = pd.read_csv(file)
+        for index, row in df.iterrows():
+            row_tuple = tuple(row)
+            if row_tuple in unique_rows:
+                duplicates.add(row_tuple)
+                print('Idetified dupllicate row.')
+            else:
+                unique_rows.add(row_tuple)
+
+    # Step 2: Remove duplicates from each file
+    for file in csv_files:
+        df = pd.read_csv(file)
+        # Convert rows to tuples for comparison
+        df['row_tuple'] = df.apply(lambda row: tuple(row), axis=1)
+        # Drop duplicates based on the tuple representation
+        df = df[~df['row_tuple'].isin(duplicates) | df['row_tuple'].duplicated(keep='first')]
+        # Remove the auxiliary column
+        df.drop('row_tuple', axis=1, inplace=True)
+        # Save the cleaned dataframe back to the file
+        df.to_csv(file, index=False)
+        print('Removed duplicate row.')
+
+    print(f"Processed {len(csv_files)} files. Duplicates removed.")
+
 def combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
     # List to hold historical-data from each CSV file
     all_data = []
@@ -560,11 +591,13 @@ def download_and_format_historical_flight_data_int():
     print(f"Finished downloading international historical flight data.")
 
 def filter_and_combine():
+    delete_repeating_rows(historical_flight_data_downloaded_file_path_os_path)
+    combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
     filter_by_alpha_codes(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_folder_path)
     print(f'Filtered and combined historical flight data.')
 ###############################################################################################
 #test method
 
 def test_method():
-    combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
+    delete_repeating_rows(historical_flight_data_downloaded_file_path_os_path)
     print(f'Filtered and combined historical flight data.')
