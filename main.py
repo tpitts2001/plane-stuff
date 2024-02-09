@@ -12,4 +12,4 @@ gd.filter_and_combine_historical_flight_data()
 ############################################################################
 #test methods
 
-gd.get_historical_flight_data_test()
+#gd.get_historical_flight_data_test()
