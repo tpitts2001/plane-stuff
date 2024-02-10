@@ -3,3 +3,4 @@ venv
 /historical-data/historical-flight-data/raw/
 /historical-data/historical-flight-data/temp/!/historical-data/historical-flight-data/formatted/
 /historical-data/historical-flight-data/formatted/
+/data/
