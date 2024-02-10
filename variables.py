@@ -8,3 +8,4 @@ historical_flight_data_label_file_path = 'historical-data/historical-flight-data
 historical_flight_data_label_file_path_int = 'historical-data/historical-flight-data/flight-data-labels-and-such/column-titles-int.csv'
 designated_alpha_codes = 'historical-data/historical-flight-data/flight-data-labels-and-such/designated_alpha_codes'
 historical_flight_data_output_folder_path = 'historical-data/historical-flight-data/formatted'
+training_dataset_file_path = 'historical-data/FINAL/temp/path_to_your_output_csv'
