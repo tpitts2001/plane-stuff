@@ -1,11 +1,9 @@
 from ACTUAL_PROGRAM import get_data as gd
-from ACTUAL_PROGRAM import model as md
 import variables
 
 ###########################################################################
-run_data_gathering_process = 'n'
+run_data_gathering_process = 'y'
 ###########################################################################
-
 
 if run_data_gathering_process == 'y':
     gd.get_historical_flight_data_int()
@@ -13,7 +11,7 @@ if run_data_gathering_process == 'y':
     gd.filter_and_combine_historical_flight_data()
 
 elif run_data_gathering_process == 'n':
-    md
+    print('No Model...')
 elif run_data_gathering_process == 't':
     gd.get_historical_flight_data_test()
 else:
