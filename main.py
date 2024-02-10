@@ -2,7 +2,7 @@ from ACTUAL_PROGRAM import get_data as gd
 import variables
 
 ###########################################################################
-run_data_gathering_process = 'y'
+run_data_gathering_process = 't'
 ###########################################################################
 
 if run_data_gathering_process == 'y':

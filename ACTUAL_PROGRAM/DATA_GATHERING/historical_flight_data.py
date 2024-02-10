@@ -23,6 +23,7 @@ asc_files = glob.glob(glob_pattern)
 designated_alpha_codes = variables.designated_alpha_codes
 historical_flight_data_output_folder_path = variables.historical_flight_data_output_folder_path
 historical_flight_data_output_file_path = variables.historical_flight_data_output_file_path
+flight_data_seperated_path = variables.flight_data_seperated_path
 
 ##############################################################
 # domestic data methods
@@ -570,6 +571,23 @@ def filter_by_alpha_codes(historical_flight_data_output_file_path, historical_fl
 
             print("Filtered CSV file saved to", historical_flight_data_output_file_path)
 
+
+def seperate_by_airline(historical_flight_data_output_file_path, flight_data_seperated_path):
+    # Read the CSV file
+    df = pd.read_csv(historical_flight_data_output_file_path)
+
+    # Check and create output directory if it doesn't exist
+    if not os.path.exists(flight_data_seperated_path):
+        os.makedirs(flight_data_seperated_path)
+
+    # Group by 'Carrier: Alpha Code' and save each group as a CSV
+    for (carrier_code), group in df.groupby('Carrier Alpha Code'):
+        output_path = os.path.join(flight_data_seperated_path, f"{carrier_code}.csv")
+        group.to_csv(output_path, index=False)
+
+    print("CSV files have been created in the specified directory.")
+
+
 ##############################################################################################
 #main methods
 def download_and_format_historical_flight_data():
@@ -603,5 +621,5 @@ def filter_and_combine():
 #test method
 
 def test_method():
-    filter_by_alpha_codes(historical_flight_data_output_file_path, historical_flight_data_output_folder_path)
+    seperate_by_airline(historical_flight_data_output_file_path, flight_data_seperated_path)
     print(f'Filtered and combined historical flight data.')

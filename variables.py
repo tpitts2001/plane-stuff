@@ -10,3 +10,4 @@ designated_alpha_codes = 'historical-data/historical-flight-data/flight-data-lab
 historical_flight_data_output_folder_path = 'historical-data/historical-flight-data/formatted'
 historical_flight_data_output_file_path = 'historical-data/historical-flight-data/formatted/historical-flight-data.csv'
 training_dataset_file_path = 'historical-data/FINAL/temp/path_to_your_output_csv'
+flight_data_seperated_path = 'historical-data/FINAL/flight-data'
