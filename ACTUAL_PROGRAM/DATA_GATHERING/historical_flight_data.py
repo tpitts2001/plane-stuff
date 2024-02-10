@@ -587,6 +587,31 @@ def seperate_by_airline(historical_flight_data_output_file_path, flight_data_sep
 
     print("CSV files have been created in the specified directory.")
 
+def combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
+    """
+    Combines all CSV files in the specified folder into one CSV file.
+
+    Parameters:
+    - folder_path: The path to the folder containing the CSV files.
+    - output_file: The path to the output CSV file.
+    """
+    # List to hold data from each CSV file
+    dataframes = []
+
+    # Iterate over each file in the folder
+    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
+        if filename.endswith('.csv'):
+            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
+            # Read the CSV file and append it to the list
+            df = pd.read_csv(file_path)
+            dataframes.append(df)
+
+    # Concatenate all the dataframes in the list
+    combined_df = pd.concat(dataframes, ignore_index=True)
+
+    # Write the combined dataframe to a new CSV file
+    combined_df.to_csv(historical_flight_data_output_file_path, index=False)
+
 
 ##############################################################################################
 #main methods
@@ -621,5 +646,5 @@ def filter_and_combine():
 #test method
 
 def test_method():
-    seperate_by_airline(historical_flight_data_output_file_path, flight_data_seperated_path)
+    combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
     print(f'Filtered and combined historical flight data.')
