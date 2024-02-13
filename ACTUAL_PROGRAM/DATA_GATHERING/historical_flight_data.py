@@ -6,6 +6,7 @@ import zipfile
 from collections import defaultdict
 import glob
 import pandas as pd
+import shutil
 
 ##############################################################
 #correlating stuff to variables file
@@ -578,6 +579,62 @@ def filter_csv_by_values(file_path, output_file_path, column_name, values_list):
     filtered_df.to_csv(output_file_path, index=False)
     print('Saved.')
 
+def get_quarter(month):
+    if 1 <= month <= 3:
+        return '1'
+    elif 4 <= month <= 6:
+        return '2'
+    elif 7 <= month <= 9:
+        return '3'
+    else:
+        return '4'
+
+def add_quarter_column_to_csv(input_file_path, output_file_path):
+
+    df = pd.read_csv(input_file_path)
+
+            # Ensure the 'Date of Data: Month' column exists
+    if 'Month' in df.columns:
+        df['Quarter'] = df['Month'].apply(get_quarter)
+        df.to_csv(output_file_path, index=False)
+        print(f"Processed and saved file: {output_file_path}")
+    else:
+        print(f"Column 'Date of Data: Month' not found in csv.")
+
+def seperate_by_airline(input_csv_path, output_directory):
+    # Read the CSV file
+    df = pd.read_csv(input_csv_path)
+
+    # Check and create output directory if it doesn't exist
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
+    # Group by 'Carrier: Alpha Code' and save each group as a CSV
+    for (carrier_code), group in df.groupby('Carrier Alpha Code'):
+        output_path = os.path.join(output_directory, f"{carrier_code}.csv")
+        group.to_csv(output_path, index=False)
+
+    print("CSV files have been created in the specified directory.")
+
+def remove_everything_in_two_dirs(dir1, dir2):
+    for dir_path in [dir1, dir2]:
+        # Check if the directory exists
+        if os.path.exists(dir_path):
+            # List all the file paths and directories within dir_path
+            for filename in os.listdir(dir_path):
+                file_path = os.path.join(dir_path, filename)
+                try:
+                    # If it's a file, remove it directly
+                    if os.path.isfile(file_path) or os.path.islink(file_path):
+                        os.remove(file_path)
+                    # If it's a directory, remove the directory and all its contents
+                    elif os.path.isdir(file_path):
+                        shutil.rmtree(file_path)
+                except Exception as e:
+                    print(f'Failed to delete {file_path}. Reason: {e}')
+        else:
+            print(f"Directory {dir_path} does not exist.")
+
 ##############################################################################################
 #main methods
 def download_and_format_historical_flight_data():
@@ -606,10 +663,12 @@ def filter_and_combine():
     combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
     remove_duplicates_in_csv(historical_flight_data_output_file_path, 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', subset=None, keep='first')
     filter_csv_by_values('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered.csv', column_to_filter_by, designated_alpha_codes)
+    add_quarter_column_to_csv('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered.csv', 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered-quarter.csv')
+    seperate_by_airline('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered-quarter.csv', flight_data_seperated_path)
     print(f'Filtered and combined historical flight data.')
 ###############################################################################################
 #test method
 
 def test_method():
-    filter_csv_by_values('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered.csv', column_to_filter_by, designated_alpha_codes)
+    remove_everything_in_two_dirs(historical_flight_data_output_folder_path, historical_flight_data_downloaded_file_path)
     print(f'Filtered and combined historical flight data.')
