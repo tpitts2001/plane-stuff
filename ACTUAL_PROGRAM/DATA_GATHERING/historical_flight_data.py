@@ -20,10 +20,11 @@ labels_file_path = variables.historical_flight_data_label_file_path
 labels_file_path_int = variables.historical_flight_data_label_file_path_int
 glob_pattern = os.path.join(historical_flight_data_downloaded_file_path_os_path, '*.asc')
 asc_files = glob.glob(glob_pattern)
-designated_alpha_codes = variables.designated_alpha_codes
+designated_alpha_codes = ["DL", "CM", "Y4", "4M", "JJ", "UC", "LA", "4C", "LU", "PZ", "LP", "B6", "HA", "G4", "AS", "F9", "YV", "AF", "SY", "WN", "AD", "G3", "FR", "RK", "UA", "NK", "OO", "AA"]
 historical_flight_data_output_folder_path = variables.historical_flight_data_output_folder_path
 historical_flight_data_output_file_path = variables.historical_flight_data_output_file_path
 flight_data_seperated_path = variables.flight_data_seperated_path
+column_to_filter_by = 'Carrier Alpha Code'
 
 ##############################################################
 # domestic data methods
@@ -552,6 +553,31 @@ def remove_duplicates_in_csv(file_path, output_file_path, subset=None, keep='fir
     print('Saved.')
 
 
+def filter_csv_by_values(file_path, output_file_path, column_name, values_list):
+    """
+    Filter a CSV file to keep only the rows where the column 'column_name' contains values in 'values_list'.
+
+    Parameters:
+    - file_path: str, the path to the input CSV file.
+    - output_file_path: str, the path to the output CSV file after filtering.
+    - column_name: str, the name of the column to filter by (e.g., 'Carrier Alpha Code').
+    - values_list: list, the values to keep in the specified column.
+    """
+
+    print('Filtering the CSV file...')
+    # Step 1: Load the CSV file into a DataFrame
+    df = pd.read_csv(file_path)
+    print('Loaded df.')
+
+    # Step 2: Filter the DataFrame to keep rows with the column 'column_name' in 'values_list'
+    filtered_df = df[df[column_name].isin(values_list)]
+    print('Filtered df.')
+    print(df['Carrier Alpha Code'].unique())
+
+    # Step 3: Save the filtered DataFrame back to a CSV file
+    filtered_df.to_csv(output_file_path, index=False)
+    print('Saved.')
+
 ##############################################################################################
 #main methods
 def download_and_format_historical_flight_data():
@@ -579,10 +605,11 @@ def download_and_format_historical_flight_data_int():
 def filter_and_combine():
     combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
     remove_duplicates_in_csv(historical_flight_data_output_file_path, 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', subset=None, keep='first')
+    filter_csv_by_values('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered.csv', column_to_filter_by, designated_alpha_codes)
     print(f'Filtered and combined historical flight data.')
 ###############################################################################################
 #test method
 
 def test_method():
-    remove_duplicates_in_csv(historical_flight_data_output_file_path, 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', subset=None, keep='first')
+    filter_csv_by_values('historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates-filtered.csv', column_to_filter_by, designated_alpha_codes)
     print(f'Filtered and combined historical flight data.')
