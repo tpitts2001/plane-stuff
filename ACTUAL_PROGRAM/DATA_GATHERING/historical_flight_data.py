@@ -495,85 +495,6 @@ def remove_null_columns_int(historical_flight_data_downloaded_file_path_os_path)
 ##############################################################################################
 #filter and combine
 
-def delete_repeated_rows(historical_flight_data_output_file_path):
-    """
-    Reads a CSV file, deletes any repeated rows, and saves the cleaned data to a new CSV file.
-
-    Parameters:
-    - csv_file_path: str, the path to the input CSV file.
-    - output_file_path: str, the path to the output CSV file where the cleaned data will be saved.
-    """
-    # Load the CSV file into a DataFrame
-    df = pd.read_csv(historical_flight_data_output_file_path)
-
-    # Drop duplicates
-    df_cleaned = df.drop_duplicates()
-
-    # Save the cleaned DataFrame to a new CSV file
-    df_cleaned.to_csv(historical_flight_data_output_file_path, index=False)
-
-    print(f"Cleaned CSV saved to {historical_flight_data_output_file_path}")
-
-def combine_csv_in_folder(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
-    # List to hold historical-data from each CSV file
-    all_data = []
-
-    # Iterate over all files in the folder
-    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
-        if filename.endswith('.csv'):
-            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
-            # Read the CSV file and append to list
-            df = pd.read_csv(file_path)
-            all_data.append(df)
-            print('Appened file ' +filename+ ' to df.' )
-
-    # Concatenate all dataframes
-    combined_df = pd.concat(all_data, ignore_index=True)
-
-    # Save the combined dataframe to a new CSV file
-    combined_df.to_csv(historical_flight_data_output_file_path, index=False)
-
-    print('Combined and saved to'+historical_flight_data_output_file_path+'.')
-
-def filter_by_alpha_codes(historical_flight_data_output_file_path, historical_flight_data_output_folder_path):
-    # Check if the output folder exists, if not, create it
-    if not os.path.exists(historical_flight_data_output_file_path):
-        os.makedirs(historical_flight_data_output_file_path)
-
-    for filename in os.listdir(historical_flight_data_output_folder_path):
-        if filename.endswith('.csv'):  # Check if the file is a CSV
-
-            print('Filtering csv...')
-
-            file_path = os.path.join(historical_flight_data_output_folder_path, filename)
-
-            # Read the CSV file
-            df = pd.read_csv(file_path)
-
-            # Filter the DataFrame
-            filtered_df = df[df["Carrier Alpha Code"].isin(list(designated_alpha_codes))]
-
-            # Save the filtered DataFrame to a new CSV file
-            historical_flight_data_output_file_path2 = 'historical-data/historical-flight-data/formatted/filtered.csv'
-            filtered_df.to_csv(historical_flight_data_output_file_path, index=False)
-
-            print("Filtered CSV file saved to", historical_flight_data_output_file_path)
-
-
-def seperate_by_airline(historical_flight_data_output_file_path, flight_data_seperated_path):
-    # Read the CSV file
-    df = pd.read_csv(historical_flight_data_output_file_path)
-
-    # Check and create output directory if it doesn't exist
-    if not os.path.exists(flight_data_seperated_path):
-        os.makedirs(flight_data_seperated_path)
-
-    # Group by 'Carrier: Alpha Code' and save each group as a CSV
-    for (carrier_code), group in df.groupby('Carrier Alpha Code'):
-        output_path = os.path.join(flight_data_seperated_path, f"{carrier_code}.csv")
-        group.to_csv(output_path, index=False)
-
-    print("CSV files have been created in the specified directory.")
 
 def combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
     """
@@ -600,32 +521,35 @@ def combine_csv_files(historical_flight_data_downloaded_file_path_os_path, histo
     # Write the combined dataframe to a new CSV file
     combined_df.to_csv(historical_flight_data_output_file_path, index=False)
 
-
-def combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path):
+def remove_duplicates_in_csv(file_path, output_file_path, subset=None, keep='first'):
     """
-    Combines all CSV files in the specified folder into one CSV file.
+    Remove duplicate rows from a CSV file and save the cleaned data to a new file.
 
     Parameters:
-    - folder_path: The path to the folder containing the CSV files.
-    - output_file: The path to the output CSV file.
+    - file_path: str, path to the input CSV file.
+    - output_file_path: str, path to the output CSV file with duplicates removed.
+    - subset: list of str, optional, columns to consider for identifying duplicates. If None, all columns are considered.
+    - keep: str, {'first', 'last', False}, determines which duplicates (if any) to keep.
+          - 'first': (default) Drop duplicates except for the first occurrence.
+          - 'last': Drop duplicates except for the last occurrence.
+          - False: Drop all duplicates.
     """
-    # List to hold data from each CSV file
-    dataframes = []
+    print('Removing duplicate rows...')
 
-    # Iterate over each file in the folder
-    for filename in os.listdir(historical_flight_data_downloaded_file_path_os_path):
-        if filename.endswith('.csv'):
-            file_path = os.path.join(historical_flight_data_downloaded_file_path_os_path, filename)
-            # Read the CSV file and append it to the list
-            df = pd.read_csv(file_path)
-            dataframes.append(df)
+    # Step 1: Load the CSV file into a DataFrame
+    df = pd.read_csv(file_path)
 
-    # Concatenate all the dataframes in the list
-    combined_df = pd.concat(dataframes, ignore_index=True)
+    print('Loaded df.')
 
-    # Write the combined dataframe to a new CSV file
-    combined_df.to_csv(historical_flight_data_output_file_path, index=False)
+    # Step 2: Drop duplicate rows in-place
+    df.drop_duplicates(subset=subset, keep=keep, inplace=True)
 
+    print('Removed duplicates.')
+
+    # Step 3: Save the DataFrame back to a CSV file without the index
+    df.to_csv(output_file_path, index=False)
+
+    print('Saved.')
 
 
 ##############################################################################################
@@ -654,13 +578,11 @@ def download_and_format_historical_flight_data_int():
 
 def filter_and_combine():
     combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
-    delete_repeated_rows(historical_flight_data_output_file_path)
-#    filter_by_alpha_codes(historical_flight_data_output_file_path, historical_flight_data_output_folder_path)
+    remove_duplicates_in_csv(historical_flight_data_output_file_path, 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', subset=None, keep='first')
     print(f'Filtered and combined historical flight data.')
 ###############################################################################################
 #test method
 
 def test_method():
-    combine_csv_files(historical_flight_data_downloaded_file_path_os_path, historical_flight_data_output_file_path)
-    delete_repeated_rows(historical_flight_data_output_file_path)
+    remove_duplicates_in_csv(historical_flight_data_output_file_path, 'historical-data/historical-flight-data/formatted/historical-flight-data-no-duplicates.csv', subset=None, keep='first')
     print(f'Filtered and combined historical flight data.')
